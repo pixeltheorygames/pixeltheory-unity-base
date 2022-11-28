@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/resharper-host/local/Transient/Rider/v203/SolutionCaches/_pixeltheory-unity-base.-283299908.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scenes" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive">
+        <e p="com.pixeltheory.base" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Code" t="Include">
+              <e p="Classes" t="Include">
+                <e p="Utilities" t="Include">
+                  <e p="SceneCameraTool.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Pixeltheory.Base.Editor.asmdef" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="Base" t="Include">
+                  <e p="PixelEditorSettingsSingle.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="package.json" t="Include" />
+          <e p="Runtime" t="Include">
+            <e p="Code" t="Include">
+              <e p="Classes" t="Include">
+                <e p="Debug" t="Include">
+                  <e p="Logging.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Pixeltheory.Base.Runtime.asmdef" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="Base" t="Include">
+                  <e p="DataManager.cs" t="Include" />
+                  <e p="PixelBehaviour.cs" t="Include" />
+                  <e p="PixelScriptableObject.cs" t="Include" />
+                  <e p="RuntimeData.cs" t="Include" />
+                </e>
+                <e p="Debug" t="Include">
+                  <e p="WorkerThreadLogger.cs" t="Include" />
+                </e>
+                <e p="Utilities" t="Include">
+                  <e p="GameObjectKeepAlive.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Tests" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Pixeltheory.Base.Editor.Tests.asmdef" t="Include" />
+            </e>
+            <e p="Runtime" t="Include">
+              <e p="DataManagerTests.cs" t="Include" />
+              <e p="GameObjectKeepAliveTests.cs" t="Include" />
+              <e p="LoggingTests.cs" t="Include" />
+              <e p="PixelBehaviourTests.cs" t="Include" />
+              <e p="Pixeltheory.Base.Runtime.Tests.asmdef" t="Include" />
+              <e p="WorkerThreadLoggerTests.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="pixeltheory-unity-base.sln" t="IncludeFlat" />
+      <e p="Pixeltheory.Base.Editor.csproj" t="IncludeRecursive" />
+      <e p="Pixeltheory.Base.Editor.Tests.csproj" t="IncludeRecursive" />
+      <e p="Pixeltheory.Base.Runtime.csproj" t="IncludeRecursive" />
+      <e p="Pixeltheory.Base.Runtime.Tests.csproj" t="IncludeRecursive" />
+      <e p="Temp/Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

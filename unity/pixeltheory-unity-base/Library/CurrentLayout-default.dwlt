@@ -1,0 +1,1318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 1920
+    y: 53
+    width: 1920
+    height: 1027
+  m_ShowMode: 4
+  m_Title: Hierarchy
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 875, y: 521}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 1
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 660
+    height: 447
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 2}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 447
+  m_MinSize: {x: 301, y: 200}
+  m_MaxSize: {x: 8001, y: 4021}
+  vertical: 0
+  controlID: 60
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 447
+    width: 1920
+    height: 530
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 16}
+  - {fileID: 12}
+  - {fileID: 10}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 8}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 1027
+  m_MinSize: {x: 875, y: 521}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1920
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LoadedToolbars:
+  - {fileID: 18}
+  m_MainToolbar: {fileID: 18}
+  m_LastLoadedLayoutName: 
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1007
+    width: 1920
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 977
+  m_MinSize: {x: 301, y: 321}
+  m_MaxSize: {x: 8001, y: 8042}
+  vertical: 1
+  controlID: 59
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 660
+    y: 0
+    width: 1260
+    height: 447
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 11}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 13}
+  - {fileID: 11}
+  m_Selected: 2
+  m_LastSelected: 0
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 581
+    width: 1920
+    height: 578
+  m_ViewDataDictionary: {fileID: 0}
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2580
+    y: 83
+    width: 1259
+    height: 426
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 681
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 267
+    - 89
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 356
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 3401000067000000
+    oldMinSizes: 2000000020000000
+    oldMaxSizes: 0000000000000000
+    oldSplitSize: 6
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 11}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[pixeltheory-unity-base][suite]'
+      name: pixeltheory-unity-base
+      fullName: pixeltheory-unity-base
+      resultStatus: 2
+      duration: 0.7542977
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1022
+      uniqueId: '[Pixeltheory.Base.Runtime.Tests.dll][suite]'
+      name: Pixeltheory.Base.Runtime.Tests.dll
+      fullName: /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/ScriptAssemblies/Pixeltheory.Base.Runtime.Tests.dll
+      resultStatus: 2
+      duration: 0.611595
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[pixeltheory-unity-base][suite]'
+    - id: 1023
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/[Pixeltheory][suite]
+      name: Pixeltheory
+      fullName: Pixeltheory
+      resultStatus: 2
+      duration: 0.6058567
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1022
+      parentUniqueId: '[Pixeltheory.Base.Runtime.Tests.dll][suite]'
+    - id: 1024
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests][suite]
+      name: Tests
+      fullName: Pixeltheory.Tests
+      resultStatus: 2
+      duration: 0.6017818
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/[Pixeltheory][suite]
+    - id: 1001
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.GameObjectKeepAliveTests][suite]
+      name: GameObjectKeepAliveTests
+      fullName: Pixeltheory.Tests.GameObjectKeepAliveTests
+      resultStatus: 1
+      duration: 0.0242379
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests][suite]
+    - id: 1002
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/GameObjectKeepAliveTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.GameObjectKeepAliveTests.GameObjectKeepAliveSceneLoadTest]
+      name: GameObjectKeepAliveSceneLoadTest
+      fullName: Pixeltheory.Tests.GameObjectKeepAliveTests.GameObjectKeepAliveSceneLoadTest
+      resultStatus: 1
+      duration: 0.0198092
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.GameObjectKeepAliveTests][suite]
+    - id: 1003
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+      name: LoggingTests
+      fullName: Pixeltheory.Tests.LoggingTests
+      resultStatus: 1
+      duration: 0.4179902
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests][suite]
+    - id: 1016
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ErrorFormatStripTest]
+      name: ErrorFormatStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatStripTest
+      resultStatus: 1
+      duration: 0.0859771
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatStripTest>d__12.MoveNext
+        () [0x00072] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:218
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1017
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ErrorFormatWithContextStripTest]
+      name: ErrorFormatWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatWithContextStripTest
+      resultStatus: 1
+      duration: 0.0220575
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatWithContextStripTest>d__13.MoveNext
+        () [0x0007d] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:235
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1014
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ErrorObjectStripTest]
+      name: ErrorObjectStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectStripTest
+      resultStatus: 1
+      duration: 0.0117297
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectStripTest>d__10.MoveNext
+        () [0x00067] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:186
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1015
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ErrorObjectWithContextStripTest]
+      name: ErrorObjectWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectWithContextStripTest
+      resultStatus: 1
+      duration: 0.0194511
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectWithContextStripTest>d__11.MoveNext
+        () [0x00076] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:202
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1012
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ExceptionStripTest]
+      name: ExceptionStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ExceptionStripTest
+      resultStatus: 1
+      duration: 0.0282335
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ExceptionStripTest>d__8.MoveNext
+        () [0x00067] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:155
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1013
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.ExceptionWithContextStripTest]
+      name: ExceptionWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.ExceptionWithContextStripTest
+      resultStatus: 1
+      duration: 0.0273304
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ExceptionWithContextStripTest>d__9.MoveNext
+        () [0x00072] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:171
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1006
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.LogFormatStripTest]
+      name: LogFormatStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.LogFormatStripTest
+      resultStatus: 1
+      duration: 0.0196879
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogFormatStripTest>d__2.MoveNext
+        () [0x00072] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:59
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1007
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.LogFormatWithContextStripTest]
+      name: LogFormatWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.LogFormatWithContextStripTest
+      resultStatus: 1
+      duration: 0.0196767
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogFormatWithContextStripTest>d__3.MoveNext
+        () [0x0007d] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:76
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1004
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.LogObjectStripTest]
+      name: LogObjectStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.LogObjectStripTest
+      resultStatus: 1
+      duration: 0.0282595
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectStripTest>d__0.MoveNext
+        () [0x00063] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:27
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1005
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.LogObjectWithContextStripTest]
+      name: LogObjectWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.LogObjectWithContextStripTest
+      resultStatus: 1
+      duration: 0.0272304
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectWithContextStripTest>d__1.MoveNext
+        () [0x00072] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:43
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1010
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.WarnFormatStripTest]
+      name: WarnFormatStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.WarnFormatStripTest
+      resultStatus: 1
+      duration: 0.0242484
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnFormatStripTest>d__6.MoveNext
+        () [0x00072] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:123
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1011
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.WarnFormatWithContextStripTest]
+      name: WarnFormatWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.WarnFormatWithContextStripTest
+      resultStatus: 1
+      duration: 0.0280149
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnFormatWithContextStripTest>d__7.MoveNext
+        () [0x0007d] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:140
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1008
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.WarnObjectStripTest]
+      name: WarnObjectStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.WarnObjectStripTest
+      resultStatus: 1
+      duration: 0.0193578
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnObjectStripTest>d__4.MoveNext
+        () [0x00064] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:91
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1009
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/LoggingTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests.WarnObjectWithContextStripTest]
+      name: WarnObjectWithContextStripTest
+      fullName: Pixeltheory.Tests.LoggingTests.WarnObjectWithContextStripTest
+      resultStatus: 1
+      duration: 0.0240083
+      messages: 
+      output: 
+      stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnObjectWithContextStripTest>d__5.MoveNext
+        () [0x00074] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base/Tests/Runtime/LoggingTests.cs:107
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0004e]
+        in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:46
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.LoggingTests][suite]
+    - id: 1018
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.PixelBehaviourTests][suite]
+      name: PixelBehaviourTests
+      fullName: Pixeltheory.Tests.PixelBehaviourTests
+      resultStatus: 1
+      duration: 0.02446
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests][suite]
+    - id: 1019
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/PixelBehaviourTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.PixelBehaviourTests.RuntimeExistenceTest]
+      name: RuntimeExistenceTest
+      fullName: Pixeltheory.Tests.PixelBehaviourTests.RuntimeExistenceTest
+      resultStatus: 1
+      duration: 0.0177812
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.PixelBehaviourTests][suite]
+    - id: 1020
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.WorkerThreadLoggerTests][suite]
+      name: WorkerThreadLoggerTests
+      fullName: Pixeltheory.Tests.WorkerThreadLoggerTests
+      resultStatus: 2
+      duration: 0.0472849
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests][suite]
+    - id: 1021
+      uniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/WorkerThreadLoggerTests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.WorkerThreadLoggerTests.WorkerThreadThrownExceptionTest]
+      name: WorkerThreadThrownExceptionTest
+      fullName: Pixeltheory.Tests.WorkerThreadLoggerTests.WorkerThreadThrownExceptionTest
+      resultStatus: 2
+      duration: 0.0369648
+      messages: 'Unhandled log message: ''[Exception] Exception: Exception on worker
+        thread.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 
+      stacktrace: 'Pixeltheory.Tests.WorkerThreadLoggerTests+<>c.<WorkerThreadThrownExceptionTest>b__0_0
+        () (at Packages/com.pixeltheory.base/Tests/Runtime/WorkerThreadLoggerTests.cs:29)
+
+        System.Threading.ThreadHelper.ThreadStart_Context
+        (System.Object state) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+
+        System.Threading.ExecutionContext.RunInternal
+        (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback
+        callback, System.Object state, System.Boolean preserveSyncCtx) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+
+        System.Threading.ExecutionContext.Run
+        (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback
+        callback, System.Object state, System.Boolean preserveSyncCtx) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+
+        System.Threading.ExecutionContext.Run
+        (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback
+        callback, System.Object state) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+
+        System.Threading.ThreadHelper.ThreadStart
+        () (at <695d1cc93cca45069c528c15c9fdd749>:0)
+
+        UnityEngine.<>c:<RegisterUECatcher>b__0_0(Object,
+        UnhandledExceptionEventArgs) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnhandledExceptionHandler.bindings.cs:46)
+
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.WorkerThreadLoggerTests][suite]
+    m_ResultText: 'WorkerThreadLoggerTests (0.047s)
+
+      ---
+
+      One or more
+      child tests had errors'
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 137}
+      m_SelectedIDs: 567c9acb
+      m_LastClickedID: -879068074
+      m_ExpandedIDs: 13985693bb8fc89555c7babd567c9acb2de9a0cd760094d30068d9d9fb2d13f05c3785f1cf3c85fce73f051154650d22d94f973c0734f542d592c745c5647255d4bc136fffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: -1
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 11}
+    m_NewResultList: []
+    m_ResultText: 'ScriptOrderAttributeTestsSimplePasses (0.017s)
+
+      ---
+
+      at
+      Pixeltheory.Editor.Tests.ScriptOrderAttributeTest.ScriptOrderAttributeTestsSimplePasses
+      () [0x00096] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Assets/Package/Tests/Editor/ScriptOrderAttributeTest.cs:32'
+    m_ResultStacktrace: 'at Pixeltheory.Editor.Tests.ScriptOrderAttributeTest.ScriptOrderAttributeTestsSimplePasses
+      () [0x00096] in /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Assets/Package/Tests/Editor/ScriptOrderAttributeTest.cs:32
+
+'
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: e41344bb
+      m_LastClickedID: -1153166364
+      m_ExpandedIDs: 2379c08555c7babdc42fd2cfa4ea7dd1eae1b1055243781d3886e52444d4e12bffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1920
+    y: 530
+    width: 1920
+    height: 509
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1920, y: 488}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -244
+    m_VBaseRangeMax: 244
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1920
+      height: 488
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 960, y: 244}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -960
+      y: -244
+      width: 1920
+      height: 488
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1920, y: 509}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2580
+    y: 83
+    width: 1259
+    height: 426
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2580
+    y: 83
+    width: 1259
+    height: 426
+  m_ViewDataDictionary: {fileID: 0}
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 451
+    m_ControlHash: 1412526313
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1920
+    y: 530
+    width: 1920
+    height: 509
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Packages/com.pixeltheory.base/Tests/Runtime
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Packages/com.pixeltheory.base/Tests/Runtime
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 203e0000
+    m_LastClickedID: 15904
+    m_ExpandedIDs: 00000000d83d0000e23d0000fc3d0000fe3d0000003e0000043e00000c3e000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 4}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000d83d0000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 98310000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: DataManagerBase
+      m_OriginalName: DataManagerBase
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 1628
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 4}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 222
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1920
+    y: 530
+    width: 1920
+    height: 509
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1920
+    y: 83
+    width: 659
+    height: 426
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e8f6ffff06f7ffffa2f8ffff4efaffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 9}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 341c59ca1922d4d6794abf4f202a009c
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DontSaveToLayout: 0
