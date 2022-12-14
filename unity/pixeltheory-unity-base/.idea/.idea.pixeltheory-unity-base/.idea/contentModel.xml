@@ -7,6 +7,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scenes" t="Include" />
+        <e p="WIP" t="Include">
+          <e p="ExceptionCatcher" t="Include">
+            <e p="CustomTestClasses" t="Include">
+              <e p="Pixeltheory.Base.Runtime.Tests.CustomClasses.asmdef" t="Include" />
+              <e p="WorkerDomainExceptionThrower.cs" t="Include" />
+            </e>
+            <e p="WorkerThreadLogger.cs" t="Include" />
+            <e p="WorkerThreadLoggerTests.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive">
@@ -42,9 +52,7 @@
                   <e p="PixelScriptableObject.cs" t="Include" />
                   <e p="RuntimeData.cs" t="Include" />
                 </e>
-                <e p="Debug" t="Include">
-                  <e p="WorkerThreadLogger.cs" t="Include" />
-                </e>
+                <e p="Debug" t="Include" />
                 <e p="Utilities" t="Include">
                   <e p="GameObjectKeepAlive.cs" t="Include" />
                 </e>
@@ -56,15 +64,10 @@
               <e p="Pixeltheory.Base.Editor.Tests.asmdef" t="Include" />
             </e>
             <e p="Runtime" t="Include">
-              <e p="CustomTestClasses" t="Include">
-                <e p="Pixeltheory.Base.Runtime.Tests.CustomClasses.asmdef" t="Include" />
-                <e p="WorkerDomainExceptionThrower.cs" t="Include" />
-              </e>
               <e p="GameObjectKeepAliveTests.cs" t="Include" />
               <e p="LoggingTests.cs" t="Include" />
               <e p="PixelBehaviourTests.cs" t="Include" />
               <e p="Pixeltheory.Base.Runtime.Tests.asmdef" t="Include" />
-              <e p="WorkerThreadLoggerTests.cs" t="Include" />
             </e>
           </e>
         </e>
