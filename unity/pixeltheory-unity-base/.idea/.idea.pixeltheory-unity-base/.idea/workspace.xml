@@ -9,18 +9,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52F1101E-FE6A-4694-9114-4C6D5CB6932D/2e/67b21a0a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/4e/29833ea5/AppDomain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/7f/c348e684/UnhandledExceptionEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEngine.TestRunner/Assertions/LogAssert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/TestLaunchers/PlaymodeLauncher.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Base/PixelScriptableObject.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Managers/DataManager.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Utilities/GameObjectKeepAlive.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Debug/WorkerThreadLogger.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Tests/Runtime/PixelBehaviourTests.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Base/RuntimeData.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Base/PixelBehaviour.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Base/DataManager.cs" />
       <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Tests/Runtime/DataManagerTests.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Tests/Runtime/WorkerThreadLoggerTests.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Tests/Runtime/CustomTestClasses/WorkerDomainExceptionThrower.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Debug/WorkerThreadLogger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2I2A8FQZoUxCeLlz40SpPWqEen3" />
@@ -64,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669369145925</updated>
       <workItem from="1669369158050" duration="31807000" />
+      <workItem from="1670747357485" duration="17546000" />
     </task>
     <servers />
   </component>

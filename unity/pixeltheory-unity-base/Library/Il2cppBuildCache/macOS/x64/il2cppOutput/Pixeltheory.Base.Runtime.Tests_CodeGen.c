@@ -1,0 +1,611 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Collections.IEnumerator Pixeltheory.Tests.GameObjectKeepAliveTests::GameObjectKeepAliveSceneLoadTest()
+extern void GameObjectKeepAliveTests_GameObjectKeepAliveSceneLoadTest_mBEAC62457218C515F67DB5E0C11CFC1D2329EA10 (void);
+// 0x00000002 System.Void Pixeltheory.Tests.GameObjectKeepAliveTests::.ctor()
+extern void GameObjectKeepAliveTests__ctor_m3113C21556FF478A954BEC715B128981825B3D7A (void);
+// 0x00000003 System.Void Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::.ctor(System.Int32)
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0__ctor_mE4447C2A0E948558223F801A6293BFA12B44320F (void);
+// 0x00000004 System.Void Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::System.IDisposable.Dispose()
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_IDisposable_Dispose_mFC733C033F7302CB4D427B82CCA09EE240C9AD35 (void);
+// 0x00000005 System.Boolean Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::MoveNext()
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_MoveNext_m9E646028FEBCE54AB0D727C52309DCC73D9B93E5 (void);
+// 0x00000006 System.Object Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m35BF6A0399FA8814A9C0680F5D11C399C18D3936 (void);
+// 0x00000007 System.Void Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::System.Collections.IEnumerator.Reset()
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_IEnumerator_Reset_mD5F240EC52820EA9A4E0BBB62AE84A238E98D81F (void);
+// 0x00000008 System.Object Pixeltheory.Tests.GameObjectKeepAliveTests/<GameObjectKeepAliveSceneLoadTest>d__0::System.Collections.IEnumerator.get_Current()
+extern void U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_IEnumerator_get_Current_m2139611357FF803E2C3CAAE42BE04F98CD7394B0 (void);
+// 0x00000009 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::LogObjectStripTest()
+extern void LoggingTests_LogObjectStripTest_m5CC3D338E2C23BFD623EF5E1E3DAFD26B1CD8895 (void);
+// 0x0000000A System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::LogObjectWithContextStripTest()
+extern void LoggingTests_LogObjectWithContextStripTest_mD06DF5A9DA7EE5B2BCE542D95B2A5258D2D52250 (void);
+// 0x0000000B System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::LogFormatStripTest()
+extern void LoggingTests_LogFormatStripTest_mD10370437DD7EC528E287E5AEC6CB2CAB0F41CD4 (void);
+// 0x0000000C System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::LogFormatWithContextStripTest()
+extern void LoggingTests_LogFormatWithContextStripTest_mAB8308A29AAF241C0D93330A41670325FA72D346 (void);
+// 0x0000000D System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::WarnObjectStripTest()
+extern void LoggingTests_WarnObjectStripTest_mB8C38096A06A1089F18194AD95437CCD277AE99A (void);
+// 0x0000000E System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::WarnObjectWithContextStripTest()
+extern void LoggingTests_WarnObjectWithContextStripTest_m8747D5284DD29A710F55B999A0E5A22F89865CAD (void);
+// 0x0000000F System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::WarnFormatStripTest()
+extern void LoggingTests_WarnFormatStripTest_mD2FD6F2AD0CD2BC28444A17D190CA675C3E55ABD (void);
+// 0x00000010 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::WarnFormatWithContextStripTest()
+extern void LoggingTests_WarnFormatWithContextStripTest_m3F363389793948DD590254AD534563723BF05427 (void);
+// 0x00000011 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ExceptionStripTest()
+extern void LoggingTests_ExceptionStripTest_mAA824AD9528DCBB898D5406566E2F7B77A5AFF96 (void);
+// 0x00000012 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ExceptionWithContextStripTest()
+extern void LoggingTests_ExceptionWithContextStripTest_m079547FA606C1A150DAF01C19D7CF7D5A348B32A (void);
+// 0x00000013 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ErrorObjectStripTest()
+extern void LoggingTests_ErrorObjectStripTest_m85A90281B9558D6B98B5D8E05F48E47A3E54A651 (void);
+// 0x00000014 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ErrorObjectWithContextStripTest()
+extern void LoggingTests_ErrorObjectWithContextStripTest_mA44E8A7D8214E6BFFA389219DD7724219EC02724 (void);
+// 0x00000015 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ErrorFormatStripTest()
+extern void LoggingTests_ErrorFormatStripTest_m16E59C8BC5CA2DA7F7A452518BD6564AC7FC0374 (void);
+// 0x00000016 System.Collections.IEnumerator Pixeltheory.Tests.LoggingTests::ErrorFormatWithContextStripTest()
+extern void LoggingTests_ErrorFormatWithContextStripTest_m552E0C6BDEE84395D50367C3AE40183F2BAC6938 (void);
+// 0x00000017 System.Void Pixeltheory.Tests.LoggingTests::.ctor()
+extern void LoggingTests__ctor_m7965BD349B64DB3DD8F97648C21BA8E38481E728 (void);
+// 0x00000018 System.Void Pixeltheory.Tests.LoggingTests/<>c::.cctor()
+extern void U3CU3Ec__cctor_m7A4303FBCF5BA1B75CA0FB2CF7F9EF261748D800 (void);
+// 0x00000019 System.Void Pixeltheory.Tests.LoggingTests/<>c::.ctor()
+extern void U3CU3Ec__ctor_m85D14A328CDD59B750A9E5F98BCB752637E77832 (void);
+// 0x0000001A System.Object Pixeltheory.Tests.LoggingTests/<>c::<LogObjectStripTest>b__0_0(System.Object)
+extern void U3CU3Ec_U3CLogObjectStripTestU3Eb__0_0_m25E9393DA22923DFB6E6570C9987D9B6CF92C70F (void);
+// 0x0000001B System.Object Pixeltheory.Tests.LoggingTests/<>c::<LogObjectWithContextStripTest>b__1_0(System.Object)
+extern void U3CU3Ec_U3CLogObjectWithContextStripTestU3Eb__1_0_m615B7CCC4D91CA03C5A14D81128F585691492EC6 (void);
+// 0x0000001C System.Object Pixeltheory.Tests.LoggingTests/<>c::<LogFormatStripTest>b__2_0(System.Object)
+extern void U3CU3Ec_U3CLogFormatStripTestU3Eb__2_0_m20C5252FBF76A9553708EDA9300E5E9DF98DF827 (void);
+// 0x0000001D System.Object Pixeltheory.Tests.LoggingTests/<>c::<LogFormatWithContextStripTest>b__3_0(System.Object)
+extern void U3CU3Ec_U3CLogFormatWithContextStripTestU3Eb__3_0_m0F5FEDE868AB41074498E5B5B9525EAD8E989358 (void);
+// 0x0000001E System.Object Pixeltheory.Tests.LoggingTests/<>c::<WarnObjectStripTest>b__4_0(System.Object)
+extern void U3CU3Ec_U3CWarnObjectStripTestU3Eb__4_0_mAF635A0D2D919321DE92B83A873C6E9C4AC767A0 (void);
+// 0x0000001F System.Object Pixeltheory.Tests.LoggingTests/<>c::<WarnObjectWithContextStripTest>b__5_0(System.Object)
+extern void U3CU3Ec_U3CWarnObjectWithContextStripTestU3Eb__5_0_m2A64040E7C4DB72368C70A226C7FE73B52C0D2AD (void);
+// 0x00000020 System.Object Pixeltheory.Tests.LoggingTests/<>c::<WarnFormatStripTest>b__6_0(System.Object)
+extern void U3CU3Ec_U3CWarnFormatStripTestU3Eb__6_0_m055ECD4D8993C69858AB0F576A1006DD4BF35197 (void);
+// 0x00000021 System.Object Pixeltheory.Tests.LoggingTests/<>c::<WarnFormatWithContextStripTest>b__7_0(System.Object)
+extern void U3CU3Ec_U3CWarnFormatWithContextStripTestU3Eb__7_0_m9E8CF24216DC5D7CD52ED7AF36A3FA0DEC64F478 (void);
+// 0x00000022 System.Exception Pixeltheory.Tests.LoggingTests/<>c::<ExceptionStripTest>b__8_0(System.Exception)
+extern void U3CU3Ec_U3CExceptionStripTestU3Eb__8_0_mE2A3D7574AC832FCB38591D317BAD5DF5F572227 (void);
+// 0x00000023 System.Exception Pixeltheory.Tests.LoggingTests/<>c::<ExceptionWithContextStripTest>b__9_0(System.Exception)
+extern void U3CU3Ec_U3CExceptionWithContextStripTestU3Eb__9_0_mD98920E9E26DCBDB887D90603E8A6E76503FDDDD (void);
+// 0x00000024 System.Object Pixeltheory.Tests.LoggingTests/<>c::<ErrorObjectStripTest>b__10_0(System.Object)
+extern void U3CU3Ec_U3CErrorObjectStripTestU3Eb__10_0_m91778558702BFA9039FB4D8C5A3E9910B460B9F7 (void);
+// 0x00000025 System.Object Pixeltheory.Tests.LoggingTests/<>c::<ErrorObjectWithContextStripTest>b__11_0(System.Object)
+extern void U3CU3Ec_U3CErrorObjectWithContextStripTestU3Eb__11_0_m0A44BD7289F5441B6DC16A09746BD319B1DFC985 (void);
+// 0x00000026 System.Object Pixeltheory.Tests.LoggingTests/<>c::<ErrorFormatStripTest>b__12_0(System.Object)
+extern void U3CU3Ec_U3CErrorFormatStripTestU3Eb__12_0_mCC350D5BFD84051DF812D8E016739E00F8404295 (void);
+// 0x00000027 System.Object Pixeltheory.Tests.LoggingTests/<>c::<ErrorFormatWithContextStripTest>b__13_0(System.Object)
+extern void U3CU3Ec_U3CErrorFormatWithContextStripTestU3Eb__13_0_mC12AC097FE54D4CCD35E3171257E18A18D115DE8 (void);
+// 0x00000028 System.Void Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::.ctor(System.Int32)
+extern void U3CLogObjectStripTestU3Ed__0__ctor_m645512510418D0D9FB6D66373F574AAA98724F0B (void);
+// 0x00000029 System.Void Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::System.IDisposable.Dispose()
+extern void U3CLogObjectStripTestU3Ed__0_System_IDisposable_Dispose_m930F519D8451768AB410558750350D1D331D3C8F (void);
+// 0x0000002A System.Boolean Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::MoveNext()
+extern void U3CLogObjectStripTestU3Ed__0_MoveNext_m69542D4ABBC8986AFB9224A10CEB6AE8202FB287 (void);
+// 0x0000002B System.Object Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLogObjectStripTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m80FAAF2AE0E466DC24D29C268350DCA9F9782D28 (void);
+// 0x0000002C System.Void Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::System.Collections.IEnumerator.Reset()
+extern void U3CLogObjectStripTestU3Ed__0_System_Collections_IEnumerator_Reset_mEC39FB4FA6E831C0A70BAE261F480B34C85C47B5 (void);
+// 0x0000002D System.Object Pixeltheory.Tests.LoggingTests/<LogObjectStripTest>d__0::System.Collections.IEnumerator.get_Current()
+extern void U3CLogObjectStripTestU3Ed__0_System_Collections_IEnumerator_get_Current_mA58256CCE63CEBDA4DF181888747F775EBB80484 (void);
+// 0x0000002E System.Void Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::.ctor(System.Int32)
+extern void U3CLogObjectWithContextStripTestU3Ed__1__ctor_m9115949B23D0A946A55FCE2CA80A6AEB5894DC21 (void);
+// 0x0000002F System.Void Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::System.IDisposable.Dispose()
+extern void U3CLogObjectWithContextStripTestU3Ed__1_System_IDisposable_Dispose_m06F403816160C55F906DA5001664470067895D91 (void);
+// 0x00000030 System.Boolean Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::MoveNext()
+extern void U3CLogObjectWithContextStripTestU3Ed__1_MoveNext_mCA73B86CB0940D56FCAC4DEFA39BB8E90B29D1D9 (void);
+// 0x00000031 System.Object Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0627F18FC0C5A0126640D9320A5A946B3FF2C0EA (void);
+// 0x00000032 System.Void Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::System.Collections.IEnumerator.Reset()
+extern void U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_IEnumerator_Reset_m1F58317AB23EE438E3E370FF685FFF900DF2340E (void);
+// 0x00000033 System.Object Pixeltheory.Tests.LoggingTests/<LogObjectWithContextStripTest>d__1::System.Collections.IEnumerator.get_Current()
+extern void U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_IEnumerator_get_Current_mFE52FCD5C80D461DF96B3F70680FBB435EA2BF51 (void);
+// 0x00000034 System.Void Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::.ctor(System.Int32)
+extern void U3CLogFormatStripTestU3Ed__2__ctor_mB98F1FD5B82B3EDC4EE09AAF78428AA15CCFEFD9 (void);
+// 0x00000035 System.Void Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::System.IDisposable.Dispose()
+extern void U3CLogFormatStripTestU3Ed__2_System_IDisposable_Dispose_m8D97FEF4DFF0B007B2E71E956C41F3BD4C0077E6 (void);
+// 0x00000036 System.Boolean Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::MoveNext()
+extern void U3CLogFormatStripTestU3Ed__2_MoveNext_mC906138BBD89BF5A5E12CAAE4BFE89467979D4BE (void);
+// 0x00000037 System.Object Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLogFormatStripTestU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBCE25E93451FED50DA05EEAB403650A650386934 (void);
+// 0x00000038 System.Void Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::System.Collections.IEnumerator.Reset()
+extern void U3CLogFormatStripTestU3Ed__2_System_Collections_IEnumerator_Reset_m5000384DC5D5CB0F06FF13715926EDC95882CBBC (void);
+// 0x00000039 System.Object Pixeltheory.Tests.LoggingTests/<LogFormatStripTest>d__2::System.Collections.IEnumerator.get_Current()
+extern void U3CLogFormatStripTestU3Ed__2_System_Collections_IEnumerator_get_Current_mF0C79AD0E120494CDB95D90E7774F4AA8FB5CD9D (void);
+// 0x0000003A System.Void Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::.ctor(System.Int32)
+extern void U3CLogFormatWithContextStripTestU3Ed__3__ctor_m20A4BA4B2F0055BEF255F33CB4A478593008CBB9 (void);
+// 0x0000003B System.Void Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::System.IDisposable.Dispose()
+extern void U3CLogFormatWithContextStripTestU3Ed__3_System_IDisposable_Dispose_m6BC58BF26C1EE98E07D66953FD50812897A5CD91 (void);
+// 0x0000003C System.Boolean Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::MoveNext()
+extern void U3CLogFormatWithContextStripTestU3Ed__3_MoveNext_m0D96CEF3B46BBAAD54AC672437B813590D625F08 (void);
+// 0x0000003D System.Object Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0E4D7C6CEF3FE86CB63D1685E3FE72CFB75A0955 (void);
+// 0x0000003E System.Void Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::System.Collections.IEnumerator.Reset()
+extern void U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_IEnumerator_Reset_m5F26D843C2EF2CBB0D9CB3A6CD29939DD6A5A5A0 (void);
+// 0x0000003F System.Object Pixeltheory.Tests.LoggingTests/<LogFormatWithContextStripTest>d__3::System.Collections.IEnumerator.get_Current()
+extern void U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_IEnumerator_get_Current_mA18E73F01EEED7F688716D50D9F02EFB99F9E2DA (void);
+// 0x00000040 System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::.ctor(System.Int32)
+extern void U3CWarnObjectStripTestU3Ed__4__ctor_mDED15D13A9AA75890E471FC13B8C4B7160D452A8 (void);
+// 0x00000041 System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::System.IDisposable.Dispose()
+extern void U3CWarnObjectStripTestU3Ed__4_System_IDisposable_Dispose_mFCEC9B688C8F0FBC04F2B29FE0FBBC2581574908 (void);
+// 0x00000042 System.Boolean Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::MoveNext()
+extern void U3CWarnObjectStripTestU3Ed__4_MoveNext_mE17304DCDD694E4924834D4F8DC4DEE93559A331 (void);
+// 0x00000043 System.Object Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWarnObjectStripTestU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCA99C31DB3B6E114FCED11FF11EA2D4222A643A1 (void);
+// 0x00000044 System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::System.Collections.IEnumerator.Reset()
+extern void U3CWarnObjectStripTestU3Ed__4_System_Collections_IEnumerator_Reset_m3D0A7B39355C616002E7CCE29EAA92E7B4C14F25 (void);
+// 0x00000045 System.Object Pixeltheory.Tests.LoggingTests/<WarnObjectStripTest>d__4::System.Collections.IEnumerator.get_Current()
+extern void U3CWarnObjectStripTestU3Ed__4_System_Collections_IEnumerator_get_Current_mB8CA8FC7B9E126A3DFBD60BC0668042EA046CCFD (void);
+// 0x00000046 System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::.ctor(System.Int32)
+extern void U3CWarnObjectWithContextStripTestU3Ed__5__ctor_mB6A528FA76384C138C15624A3E2D3304D7F88434 (void);
+// 0x00000047 System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::System.IDisposable.Dispose()
+extern void U3CWarnObjectWithContextStripTestU3Ed__5_System_IDisposable_Dispose_mF46EA62C1E50E02D6BE98CD630EA2242837553BB (void);
+// 0x00000048 System.Boolean Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::MoveNext()
+extern void U3CWarnObjectWithContextStripTestU3Ed__5_MoveNext_m3B335A07D20BB739EAA7FFF5962917AF72F64AED (void);
+// 0x00000049 System.Object Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2D32FA79980BCE9575F3C30B27BAB102D4723F8B (void);
+// 0x0000004A System.Void Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::System.Collections.IEnumerator.Reset()
+extern void U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_IEnumerator_Reset_mF2B7CDE261EC561125030FE11D0A4EE4CC148996 (void);
+// 0x0000004B System.Object Pixeltheory.Tests.LoggingTests/<WarnObjectWithContextStripTest>d__5::System.Collections.IEnumerator.get_Current()
+extern void U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_IEnumerator_get_Current_mE0F5F2BB6E0BCF982BB0F5890BD2C0DDF63D1B3B (void);
+// 0x0000004C System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::.ctor(System.Int32)
+extern void U3CWarnFormatStripTestU3Ed__6__ctor_m992D903BCB6F4AC3A0C2622D72B7CB902FB32DDB (void);
+// 0x0000004D System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::System.IDisposable.Dispose()
+extern void U3CWarnFormatStripTestU3Ed__6_System_IDisposable_Dispose_m6D917608287D9722917850DF5E595C8561F90D41 (void);
+// 0x0000004E System.Boolean Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::MoveNext()
+extern void U3CWarnFormatStripTestU3Ed__6_MoveNext_m193B3BD03785CF86C0F4DA7DE77075DAD046D3D8 (void);
+// 0x0000004F System.Object Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWarnFormatStripTestU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m023F12F850C01B0B6DBFDA6847E31C1A27EC77EE (void);
+// 0x00000050 System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::System.Collections.IEnumerator.Reset()
+extern void U3CWarnFormatStripTestU3Ed__6_System_Collections_IEnumerator_Reset_m267CEA1F1A6B8F6470BE82695A796EE942D1619C (void);
+// 0x00000051 System.Object Pixeltheory.Tests.LoggingTests/<WarnFormatStripTest>d__6::System.Collections.IEnumerator.get_Current()
+extern void U3CWarnFormatStripTestU3Ed__6_System_Collections_IEnumerator_get_Current_m05D66D53AEA92E8CDFA995D54E0BB9D79F9217CD (void);
+// 0x00000052 System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::.ctor(System.Int32)
+extern void U3CWarnFormatWithContextStripTestU3Ed__7__ctor_m8EC99B6F3ECF06C29B7E5C7435F588517C1883A4 (void);
+// 0x00000053 System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::System.IDisposable.Dispose()
+extern void U3CWarnFormatWithContextStripTestU3Ed__7_System_IDisposable_Dispose_mDC86B6FCD05C064BC8287121D4EF7FE538084C94 (void);
+// 0x00000054 System.Boolean Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::MoveNext()
+extern void U3CWarnFormatWithContextStripTestU3Ed__7_MoveNext_mA8428DA8207295C22578EF5CE8C13C741AA61687 (void);
+// 0x00000055 System.Object Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72A9DB8E12D4E5756FC952D636D702676E50E74D (void);
+// 0x00000056 System.Void Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_IEnumerator_Reset_mDA682513424D19C1BB27AF259BA4647257866147 (void);
+// 0x00000057 System.Object Pixeltheory.Tests.LoggingTests/<WarnFormatWithContextStripTest>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_IEnumerator_get_Current_m9BCE0B514E68F7611F2FA4FF7B5382CCDAC5EA04 (void);
+// 0x00000058 System.Void Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::.ctor(System.Int32)
+extern void U3CExceptionStripTestU3Ed__8__ctor_m0C06293D1D76516299FAC7CB91E71E235312947B (void);
+// 0x00000059 System.Void Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::System.IDisposable.Dispose()
+extern void U3CExceptionStripTestU3Ed__8_System_IDisposable_Dispose_mE9CF62D5C80B1883C92649FDF4C391DFFBCDEA5C (void);
+// 0x0000005A System.Boolean Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::MoveNext()
+extern void U3CExceptionStripTestU3Ed__8_MoveNext_m92BE872965E4EBDF4AEA7034525D010C96F77667 (void);
+// 0x0000005B System.Object Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CExceptionStripTestU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE4E304BCF921986CE1D9810B8333343178B9CFB7 (void);
+// 0x0000005C System.Void Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CExceptionStripTestU3Ed__8_System_Collections_IEnumerator_Reset_m0BFC2F1580B8F13C074DAA56CA3ECB6A8841FFD3 (void);
+// 0x0000005D System.Object Pixeltheory.Tests.LoggingTests/<ExceptionStripTest>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CExceptionStripTestU3Ed__8_System_Collections_IEnumerator_get_Current_mABEE74F00871B81E851D2B49C9811979ABD6F888 (void);
+// 0x0000005E System.Void Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::.ctor(System.Int32)
+extern void U3CExceptionWithContextStripTestU3Ed__9__ctor_m5A767511B21553D57F8A5A8CD949A889EE84436E (void);
+// 0x0000005F System.Void Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::System.IDisposable.Dispose()
+extern void U3CExceptionWithContextStripTestU3Ed__9_System_IDisposable_Dispose_mA1776E1B7AC293FBCECFABC3035608396DC118AD (void);
+// 0x00000060 System.Boolean Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::MoveNext()
+extern void U3CExceptionWithContextStripTestU3Ed__9_MoveNext_m96018CF5572F6A9FC2255406D6F4DE7696FD3663 (void);
+// 0x00000061 System.Object Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CExceptionWithContextStripTestU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m35E924F6DBF9FEBF2C25646079F1982D91A1A124 (void);
+// 0x00000062 System.Void Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::System.Collections.IEnumerator.Reset()
+extern void U3CExceptionWithContextStripTestU3Ed__9_System_Collections_IEnumerator_Reset_m3AE4DA2FA04843A6926A1711236EED3EA4DA7953 (void);
+// 0x00000063 System.Object Pixeltheory.Tests.LoggingTests/<ExceptionWithContextStripTest>d__9::System.Collections.IEnumerator.get_Current()
+extern void U3CExceptionWithContextStripTestU3Ed__9_System_Collections_IEnumerator_get_Current_mB66748BDE52C77A6E0BB41C5E00496AFCAC8428A (void);
+// 0x00000064 System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::.ctor(System.Int32)
+extern void U3CErrorObjectStripTestU3Ed__10__ctor_m3DF3A9AA2A544115F4017E17A9E1BE14398E2213 (void);
+// 0x00000065 System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::System.IDisposable.Dispose()
+extern void U3CErrorObjectStripTestU3Ed__10_System_IDisposable_Dispose_m677C77DC8B371C4B69EFFCA2109AB1B0DB06EFEF (void);
+// 0x00000066 System.Boolean Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::MoveNext()
+extern void U3CErrorObjectStripTestU3Ed__10_MoveNext_mB1796EDD8C3BB2738EFF762D71676D2F278FA0DD (void);
+// 0x00000067 System.Object Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CErrorObjectStripTestU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD963720C4D7547C9799986CA5E3E24D811A210EC (void);
+// 0x00000068 System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CErrorObjectStripTestU3Ed__10_System_Collections_IEnumerator_Reset_m85021A58394441B9E17041EF2359CC96E2F8186C (void);
+// 0x00000069 System.Object Pixeltheory.Tests.LoggingTests/<ErrorObjectStripTest>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CErrorObjectStripTestU3Ed__10_System_Collections_IEnumerator_get_Current_m2465958B92B00C999F6EA428D52E5BEC6DF1EE68 (void);
+// 0x0000006A System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::.ctor(System.Int32)
+extern void U3CErrorObjectWithContextStripTestU3Ed__11__ctor_m96C41A5DC6CF8BAB516D6A66DE11BFAEEA8B4679 (void);
+// 0x0000006B System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::System.IDisposable.Dispose()
+extern void U3CErrorObjectWithContextStripTestU3Ed__11_System_IDisposable_Dispose_m0C737AB9941E63E37D1BACA84F9A81D01D8BCC29 (void);
+// 0x0000006C System.Boolean Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::MoveNext()
+extern void U3CErrorObjectWithContextStripTestU3Ed__11_MoveNext_mE18A4C66298FC0E55AEED0A4F3943C295B1DF9DE (void);
+// 0x0000006D System.Object Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC579B19ECFE45B3D104A0594B197D2F133D6E430 (void);
+// 0x0000006E System.Void Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::System.Collections.IEnumerator.Reset()
+extern void U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_IEnumerator_Reset_m5D0478D564112BFFE1B2511EDAC566B1F31EA90D (void);
+// 0x0000006F System.Object Pixeltheory.Tests.LoggingTests/<ErrorObjectWithContextStripTest>d__11::System.Collections.IEnumerator.get_Current()
+extern void U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_IEnumerator_get_Current_m04023EBA073EC143D9A15EAEB66300A738F82A28 (void);
+// 0x00000070 System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::.ctor(System.Int32)
+extern void U3CErrorFormatStripTestU3Ed__12__ctor_m251F81A9EDD852B3E115FD22DA8C3EB40AD5AFA5 (void);
+// 0x00000071 System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::System.IDisposable.Dispose()
+extern void U3CErrorFormatStripTestU3Ed__12_System_IDisposable_Dispose_m53477DB90A4BA8A6647542593A271F7F5BDC8ED5 (void);
+// 0x00000072 System.Boolean Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::MoveNext()
+extern void U3CErrorFormatStripTestU3Ed__12_MoveNext_m9C1C0C69E97C929129C10C2726232FE5DDEF8D54 (void);
+// 0x00000073 System.Object Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CErrorFormatStripTestU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m064680988E58AB098C195DB416788073009F8C62 (void);
+// 0x00000074 System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::System.Collections.IEnumerator.Reset()
+extern void U3CErrorFormatStripTestU3Ed__12_System_Collections_IEnumerator_Reset_m35B5E69CB2560382B31023B8FB589F4576AE3AE9 (void);
+// 0x00000075 System.Object Pixeltheory.Tests.LoggingTests/<ErrorFormatStripTest>d__12::System.Collections.IEnumerator.get_Current()
+extern void U3CErrorFormatStripTestU3Ed__12_System_Collections_IEnumerator_get_Current_m1BB187FB81B8848A5758AE3C165F4DAEB6F6845F (void);
+// 0x00000076 System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::.ctor(System.Int32)
+extern void U3CErrorFormatWithContextStripTestU3Ed__13__ctor_m26B10C661B3A524D2E833B0BED1F03949F9A2897 (void);
+// 0x00000077 System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::System.IDisposable.Dispose()
+extern void U3CErrorFormatWithContextStripTestU3Ed__13_System_IDisposable_Dispose_m0363461CC81258F0ECFD80A11A8A87A9E672AAE6 (void);
+// 0x00000078 System.Boolean Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::MoveNext()
+extern void U3CErrorFormatWithContextStripTestU3Ed__13_MoveNext_m57FDD98ADD3A0013A15E5A819CD44F5872202EAA (void);
+// 0x00000079 System.Object Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5768753E1B1EFEE75A3BD2746AB08A3A386B4D4B (void);
+// 0x0000007A System.Void Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::System.Collections.IEnumerator.Reset()
+extern void U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_IEnumerator_Reset_m3BF0B6F4CE586F15FBBDDD3D1CC66767B87ACD63 (void);
+// 0x0000007B System.Object Pixeltheory.Tests.LoggingTests/<ErrorFormatWithContextStripTest>d__13::System.Collections.IEnumerator.get_Current()
+extern void U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_IEnumerator_get_Current_m649138D6316A0146FAE924AE098C5A8BF20D59B2 (void);
+// 0x0000007C System.Collections.IEnumerator Pixeltheory.Tests.PixelBehaviourTests::RuntimeExistenceTest()
+extern void PixelBehaviourTests_RuntimeExistenceTest_mA0422913F6C70F629B121065345D1209EB7F1469 (void);
+// 0x0000007D System.Void Pixeltheory.Tests.PixelBehaviourTests::.ctor()
+extern void PixelBehaviourTests__ctor_m1C4C994A17955BD9AA7D5418759E16F92C2D3ACD (void);
+// 0x0000007E System.Boolean Pixeltheory.Tests.PixelBehaviourTests/PixelBehaviourSingleTest::get_IsTestFinished()
+extern void PixelBehaviourSingleTest_get_IsTestFinished_mAA4A1AF456F87D11173CF0E0900DFE89C2DAEADE (void);
+// 0x0000007F System.Void Pixeltheory.Tests.PixelBehaviourTests/PixelBehaviourSingleTest::.ctor()
+extern void PixelBehaviourSingleTest__ctor_mF918EDC1A9C1242B3B2DCB998144E618556B5CDA (void);
+// 0x00000080 System.Void Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::.ctor(System.Int32)
+extern void U3CRuntimeExistenceTestU3Ed__0__ctor_m936755BE69188DB14477C947433473834537C568 (void);
+// 0x00000081 System.Void Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::System.IDisposable.Dispose()
+extern void U3CRuntimeExistenceTestU3Ed__0_System_IDisposable_Dispose_m6E9A9FD302C873719B4D5DBE78FC759BF349B02B (void);
+// 0x00000082 System.Boolean Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::MoveNext()
+extern void U3CRuntimeExistenceTestU3Ed__0_MoveNext_mE3D5AB8783D06B51223592B7178A0F7E60B7E895 (void);
+// 0x00000083 System.Object Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CRuntimeExistenceTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD6073DC50858A0DDCDE9D4DD3AACC6E31518D946 (void);
+// 0x00000084 System.Void Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::System.Collections.IEnumerator.Reset()
+extern void U3CRuntimeExistenceTestU3Ed__0_System_Collections_IEnumerator_Reset_mAFCB98948C4DA70D1BE65A25CF8740AC565D3ACC (void);
+// 0x00000085 System.Object Pixeltheory.Tests.PixelBehaviourTests/<RuntimeExistenceTest>d__0::System.Collections.IEnumerator.get_Current()
+extern void U3CRuntimeExistenceTestU3Ed__0_System_Collections_IEnumerator_get_Current_m494FFA2B797600A51F48DE69F55F2ED67D13E2CC (void);
+// 0x00000086 System.Collections.IEnumerator Pixeltheory.Tests.WorkerThreadLoggerTests::WorkerThreadThrownExceptionTest()
+extern void WorkerThreadLoggerTests_WorkerThreadThrownExceptionTest_m1D7E4317604E16353D30324996F29F68883A5F69 (void);
+// 0x00000087 System.Void Pixeltheory.Tests.WorkerThreadLoggerTests::ThrowTestException()
+extern void WorkerThreadLoggerTests_ThrowTestException_m80A42131CF1D8872612135550EF524F669D83D6F (void);
+// 0x00000088 System.Void Pixeltheory.Tests.WorkerThreadLoggerTests::.ctor()
+extern void WorkerThreadLoggerTests__ctor_m1F179A8C21AD1B3385C2D2AFFE37B30465E50450 (void);
+// 0x00000089 System.Void Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::.ctor(System.Int32)
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0__ctor_m9F3C903CE51EC9319B990A4045F135DC9559657B (void);
+// 0x0000008A System.Void Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::System.IDisposable.Dispose()
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0_System_IDisposable_Dispose_mF18D6FA96461A82C2060886404FE5A9A3F98D537 (void);
+// 0x0000008B System.Boolean Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::MoveNext()
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0_MoveNext_m88CFE4B2CCD1E82D911209F8651D8EF648287B51 (void);
+// 0x0000008C System.Object Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFEF4569F0A34B88A9EEE105C2CBC743C72BDE44 (void);
+// 0x0000008D System.Void Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::System.Collections.IEnumerator.Reset()
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_IEnumerator_Reset_mC78D204D977FABD97D269E33F5A634ADE8D4E195 (void);
+// 0x0000008E System.Object Pixeltheory.Tests.WorkerThreadLoggerTests/<WorkerThreadThrownExceptionTest>d__0::System.Collections.IEnumerator.get_Current()
+extern void U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_IEnumerator_get_Current_m091B4A0E4A6E30714B4FF0C6FE33F4193324C66A (void);
+static Il2CppMethodPointer s_methodPointers[142] = 
+{
+	GameObjectKeepAliveTests_GameObjectKeepAliveSceneLoadTest_mBEAC62457218C515F67DB5E0C11CFC1D2329EA10,
+	GameObjectKeepAliveTests__ctor_m3113C21556FF478A954BEC715B128981825B3D7A,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0__ctor_mE4447C2A0E948558223F801A6293BFA12B44320F,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_IDisposable_Dispose_mFC733C033F7302CB4D427B82CCA09EE240C9AD35,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_MoveNext_m9E646028FEBCE54AB0D727C52309DCC73D9B93E5,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m35BF6A0399FA8814A9C0680F5D11C399C18D3936,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_IEnumerator_Reset_mD5F240EC52820EA9A4E0BBB62AE84A238E98D81F,
+	U3CGameObjectKeepAliveSceneLoadTestU3Ed__0_System_Collections_IEnumerator_get_Current_m2139611357FF803E2C3CAAE42BE04F98CD7394B0,
+	LoggingTests_LogObjectStripTest_m5CC3D338E2C23BFD623EF5E1E3DAFD26B1CD8895,
+	LoggingTests_LogObjectWithContextStripTest_mD06DF5A9DA7EE5B2BCE542D95B2A5258D2D52250,
+	LoggingTests_LogFormatStripTest_mD10370437DD7EC528E287E5AEC6CB2CAB0F41CD4,
+	LoggingTests_LogFormatWithContextStripTest_mAB8308A29AAF241C0D93330A41670325FA72D346,
+	LoggingTests_WarnObjectStripTest_mB8C38096A06A1089F18194AD95437CCD277AE99A,
+	LoggingTests_WarnObjectWithContextStripTest_m8747D5284DD29A710F55B999A0E5A22F89865CAD,
+	LoggingTests_WarnFormatStripTest_mD2FD6F2AD0CD2BC28444A17D190CA675C3E55ABD,
+	LoggingTests_WarnFormatWithContextStripTest_m3F363389793948DD590254AD534563723BF05427,
+	LoggingTests_ExceptionStripTest_mAA824AD9528DCBB898D5406566E2F7B77A5AFF96,
+	LoggingTests_ExceptionWithContextStripTest_m079547FA606C1A150DAF01C19D7CF7D5A348B32A,
+	LoggingTests_ErrorObjectStripTest_m85A90281B9558D6B98B5D8E05F48E47A3E54A651,
+	LoggingTests_ErrorObjectWithContextStripTest_mA44E8A7D8214E6BFFA389219DD7724219EC02724,
+	LoggingTests_ErrorFormatStripTest_m16E59C8BC5CA2DA7F7A452518BD6564AC7FC0374,
+	LoggingTests_ErrorFormatWithContextStripTest_m552E0C6BDEE84395D50367C3AE40183F2BAC6938,
+	LoggingTests__ctor_m7965BD349B64DB3DD8F97648C21BA8E38481E728,
+	U3CU3Ec__cctor_m7A4303FBCF5BA1B75CA0FB2CF7F9EF261748D800,
+	U3CU3Ec__ctor_m85D14A328CDD59B750A9E5F98BCB752637E77832,
+	U3CU3Ec_U3CLogObjectStripTestU3Eb__0_0_m25E9393DA22923DFB6E6570C9987D9B6CF92C70F,
+	U3CU3Ec_U3CLogObjectWithContextStripTestU3Eb__1_0_m615B7CCC4D91CA03C5A14D81128F585691492EC6,
+	U3CU3Ec_U3CLogFormatStripTestU3Eb__2_0_m20C5252FBF76A9553708EDA9300E5E9DF98DF827,
+	U3CU3Ec_U3CLogFormatWithContextStripTestU3Eb__3_0_m0F5FEDE868AB41074498E5B5B9525EAD8E989358,
+	U3CU3Ec_U3CWarnObjectStripTestU3Eb__4_0_mAF635A0D2D919321DE92B83A873C6E9C4AC767A0,
+	U3CU3Ec_U3CWarnObjectWithContextStripTestU3Eb__5_0_m2A64040E7C4DB72368C70A226C7FE73B52C0D2AD,
+	U3CU3Ec_U3CWarnFormatStripTestU3Eb__6_0_m055ECD4D8993C69858AB0F576A1006DD4BF35197,
+	U3CU3Ec_U3CWarnFormatWithContextStripTestU3Eb__7_0_m9E8CF24216DC5D7CD52ED7AF36A3FA0DEC64F478,
+	U3CU3Ec_U3CExceptionStripTestU3Eb__8_0_mE2A3D7574AC832FCB38591D317BAD5DF5F572227,
+	U3CU3Ec_U3CExceptionWithContextStripTestU3Eb__9_0_mD98920E9E26DCBDB887D90603E8A6E76503FDDDD,
+	U3CU3Ec_U3CErrorObjectStripTestU3Eb__10_0_m91778558702BFA9039FB4D8C5A3E9910B460B9F7,
+	U3CU3Ec_U3CErrorObjectWithContextStripTestU3Eb__11_0_m0A44BD7289F5441B6DC16A09746BD319B1DFC985,
+	U3CU3Ec_U3CErrorFormatStripTestU3Eb__12_0_mCC350D5BFD84051DF812D8E016739E00F8404295,
+	U3CU3Ec_U3CErrorFormatWithContextStripTestU3Eb__13_0_mC12AC097FE54D4CCD35E3171257E18A18D115DE8,
+	U3CLogObjectStripTestU3Ed__0__ctor_m645512510418D0D9FB6D66373F574AAA98724F0B,
+	U3CLogObjectStripTestU3Ed__0_System_IDisposable_Dispose_m930F519D8451768AB410558750350D1D331D3C8F,
+	U3CLogObjectStripTestU3Ed__0_MoveNext_m69542D4ABBC8986AFB9224A10CEB6AE8202FB287,
+	U3CLogObjectStripTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m80FAAF2AE0E466DC24D29C268350DCA9F9782D28,
+	U3CLogObjectStripTestU3Ed__0_System_Collections_IEnumerator_Reset_mEC39FB4FA6E831C0A70BAE261F480B34C85C47B5,
+	U3CLogObjectStripTestU3Ed__0_System_Collections_IEnumerator_get_Current_mA58256CCE63CEBDA4DF181888747F775EBB80484,
+	U3CLogObjectWithContextStripTestU3Ed__1__ctor_m9115949B23D0A946A55FCE2CA80A6AEB5894DC21,
+	U3CLogObjectWithContextStripTestU3Ed__1_System_IDisposable_Dispose_m06F403816160C55F906DA5001664470067895D91,
+	U3CLogObjectWithContextStripTestU3Ed__1_MoveNext_mCA73B86CB0940D56FCAC4DEFA39BB8E90B29D1D9,
+	U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0627F18FC0C5A0126640D9320A5A946B3FF2C0EA,
+	U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_IEnumerator_Reset_m1F58317AB23EE438E3E370FF685FFF900DF2340E,
+	U3CLogObjectWithContextStripTestU3Ed__1_System_Collections_IEnumerator_get_Current_mFE52FCD5C80D461DF96B3F70680FBB435EA2BF51,
+	U3CLogFormatStripTestU3Ed__2__ctor_mB98F1FD5B82B3EDC4EE09AAF78428AA15CCFEFD9,
+	U3CLogFormatStripTestU3Ed__2_System_IDisposable_Dispose_m8D97FEF4DFF0B007B2E71E956C41F3BD4C0077E6,
+	U3CLogFormatStripTestU3Ed__2_MoveNext_mC906138BBD89BF5A5E12CAAE4BFE89467979D4BE,
+	U3CLogFormatStripTestU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBCE25E93451FED50DA05EEAB403650A650386934,
+	U3CLogFormatStripTestU3Ed__2_System_Collections_IEnumerator_Reset_m5000384DC5D5CB0F06FF13715926EDC95882CBBC,
+	U3CLogFormatStripTestU3Ed__2_System_Collections_IEnumerator_get_Current_mF0C79AD0E120494CDB95D90E7774F4AA8FB5CD9D,
+	U3CLogFormatWithContextStripTestU3Ed__3__ctor_m20A4BA4B2F0055BEF255F33CB4A478593008CBB9,
+	U3CLogFormatWithContextStripTestU3Ed__3_System_IDisposable_Dispose_m6BC58BF26C1EE98E07D66953FD50812897A5CD91,
+	U3CLogFormatWithContextStripTestU3Ed__3_MoveNext_m0D96CEF3B46BBAAD54AC672437B813590D625F08,
+	U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0E4D7C6CEF3FE86CB63D1685E3FE72CFB75A0955,
+	U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_IEnumerator_Reset_m5F26D843C2EF2CBB0D9CB3A6CD29939DD6A5A5A0,
+	U3CLogFormatWithContextStripTestU3Ed__3_System_Collections_IEnumerator_get_Current_mA18E73F01EEED7F688716D50D9F02EFB99F9E2DA,
+	U3CWarnObjectStripTestU3Ed__4__ctor_mDED15D13A9AA75890E471FC13B8C4B7160D452A8,
+	U3CWarnObjectStripTestU3Ed__4_System_IDisposable_Dispose_mFCEC9B688C8F0FBC04F2B29FE0FBBC2581574908,
+	U3CWarnObjectStripTestU3Ed__4_MoveNext_mE17304DCDD694E4924834D4F8DC4DEE93559A331,
+	U3CWarnObjectStripTestU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCA99C31DB3B6E114FCED11FF11EA2D4222A643A1,
+	U3CWarnObjectStripTestU3Ed__4_System_Collections_IEnumerator_Reset_m3D0A7B39355C616002E7CCE29EAA92E7B4C14F25,
+	U3CWarnObjectStripTestU3Ed__4_System_Collections_IEnumerator_get_Current_mB8CA8FC7B9E126A3DFBD60BC0668042EA046CCFD,
+	U3CWarnObjectWithContextStripTestU3Ed__5__ctor_mB6A528FA76384C138C15624A3E2D3304D7F88434,
+	U3CWarnObjectWithContextStripTestU3Ed__5_System_IDisposable_Dispose_mF46EA62C1E50E02D6BE98CD630EA2242837553BB,
+	U3CWarnObjectWithContextStripTestU3Ed__5_MoveNext_m3B335A07D20BB739EAA7FFF5962917AF72F64AED,
+	U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2D32FA79980BCE9575F3C30B27BAB102D4723F8B,
+	U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_IEnumerator_Reset_mF2B7CDE261EC561125030FE11D0A4EE4CC148996,
+	U3CWarnObjectWithContextStripTestU3Ed__5_System_Collections_IEnumerator_get_Current_mE0F5F2BB6E0BCF982BB0F5890BD2C0DDF63D1B3B,
+	U3CWarnFormatStripTestU3Ed__6__ctor_m992D903BCB6F4AC3A0C2622D72B7CB902FB32DDB,
+	U3CWarnFormatStripTestU3Ed__6_System_IDisposable_Dispose_m6D917608287D9722917850DF5E595C8561F90D41,
+	U3CWarnFormatStripTestU3Ed__6_MoveNext_m193B3BD03785CF86C0F4DA7DE77075DAD046D3D8,
+	U3CWarnFormatStripTestU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m023F12F850C01B0B6DBFDA6847E31C1A27EC77EE,
+	U3CWarnFormatStripTestU3Ed__6_System_Collections_IEnumerator_Reset_m267CEA1F1A6B8F6470BE82695A796EE942D1619C,
+	U3CWarnFormatStripTestU3Ed__6_System_Collections_IEnumerator_get_Current_m05D66D53AEA92E8CDFA995D54E0BB9D79F9217CD,
+	U3CWarnFormatWithContextStripTestU3Ed__7__ctor_m8EC99B6F3ECF06C29B7E5C7435F588517C1883A4,
+	U3CWarnFormatWithContextStripTestU3Ed__7_System_IDisposable_Dispose_mDC86B6FCD05C064BC8287121D4EF7FE538084C94,
+	U3CWarnFormatWithContextStripTestU3Ed__7_MoveNext_mA8428DA8207295C22578EF5CE8C13C741AA61687,
+	U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72A9DB8E12D4E5756FC952D636D702676E50E74D,
+	U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_IEnumerator_Reset_mDA682513424D19C1BB27AF259BA4647257866147,
+	U3CWarnFormatWithContextStripTestU3Ed__7_System_Collections_IEnumerator_get_Current_m9BCE0B514E68F7611F2FA4FF7B5382CCDAC5EA04,
+	U3CExceptionStripTestU3Ed__8__ctor_m0C06293D1D76516299FAC7CB91E71E235312947B,
+	U3CExceptionStripTestU3Ed__8_System_IDisposable_Dispose_mE9CF62D5C80B1883C92649FDF4C391DFFBCDEA5C,
+	U3CExceptionStripTestU3Ed__8_MoveNext_m92BE872965E4EBDF4AEA7034525D010C96F77667,
+	U3CExceptionStripTestU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE4E304BCF921986CE1D9810B8333343178B9CFB7,
+	U3CExceptionStripTestU3Ed__8_System_Collections_IEnumerator_Reset_m0BFC2F1580B8F13C074DAA56CA3ECB6A8841FFD3,
+	U3CExceptionStripTestU3Ed__8_System_Collections_IEnumerator_get_Current_mABEE74F00871B81E851D2B49C9811979ABD6F888,
+	U3CExceptionWithContextStripTestU3Ed__9__ctor_m5A767511B21553D57F8A5A8CD949A889EE84436E,
+	U3CExceptionWithContextStripTestU3Ed__9_System_IDisposable_Dispose_mA1776E1B7AC293FBCECFABC3035608396DC118AD,
+	U3CExceptionWithContextStripTestU3Ed__9_MoveNext_m96018CF5572F6A9FC2255406D6F4DE7696FD3663,
+	U3CExceptionWithContextStripTestU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m35E924F6DBF9FEBF2C25646079F1982D91A1A124,
+	U3CExceptionWithContextStripTestU3Ed__9_System_Collections_IEnumerator_Reset_m3AE4DA2FA04843A6926A1711236EED3EA4DA7953,
+	U3CExceptionWithContextStripTestU3Ed__9_System_Collections_IEnumerator_get_Current_mB66748BDE52C77A6E0BB41C5E00496AFCAC8428A,
+	U3CErrorObjectStripTestU3Ed__10__ctor_m3DF3A9AA2A544115F4017E17A9E1BE14398E2213,
+	U3CErrorObjectStripTestU3Ed__10_System_IDisposable_Dispose_m677C77DC8B371C4B69EFFCA2109AB1B0DB06EFEF,
+	U3CErrorObjectStripTestU3Ed__10_MoveNext_mB1796EDD8C3BB2738EFF762D71676D2F278FA0DD,
+	U3CErrorObjectStripTestU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD963720C4D7547C9799986CA5E3E24D811A210EC,
+	U3CErrorObjectStripTestU3Ed__10_System_Collections_IEnumerator_Reset_m85021A58394441B9E17041EF2359CC96E2F8186C,
+	U3CErrorObjectStripTestU3Ed__10_System_Collections_IEnumerator_get_Current_m2465958B92B00C999F6EA428D52E5BEC6DF1EE68,
+	U3CErrorObjectWithContextStripTestU3Ed__11__ctor_m96C41A5DC6CF8BAB516D6A66DE11BFAEEA8B4679,
+	U3CErrorObjectWithContextStripTestU3Ed__11_System_IDisposable_Dispose_m0C737AB9941E63E37D1BACA84F9A81D01D8BCC29,
+	U3CErrorObjectWithContextStripTestU3Ed__11_MoveNext_mE18A4C66298FC0E55AEED0A4F3943C295B1DF9DE,
+	U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC579B19ECFE45B3D104A0594B197D2F133D6E430,
+	U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_IEnumerator_Reset_m5D0478D564112BFFE1B2511EDAC566B1F31EA90D,
+	U3CErrorObjectWithContextStripTestU3Ed__11_System_Collections_IEnumerator_get_Current_m04023EBA073EC143D9A15EAEB66300A738F82A28,
+	U3CErrorFormatStripTestU3Ed__12__ctor_m251F81A9EDD852B3E115FD22DA8C3EB40AD5AFA5,
+	U3CErrorFormatStripTestU3Ed__12_System_IDisposable_Dispose_m53477DB90A4BA8A6647542593A271F7F5BDC8ED5,
+	U3CErrorFormatStripTestU3Ed__12_MoveNext_m9C1C0C69E97C929129C10C2726232FE5DDEF8D54,
+	U3CErrorFormatStripTestU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m064680988E58AB098C195DB416788073009F8C62,
+	U3CErrorFormatStripTestU3Ed__12_System_Collections_IEnumerator_Reset_m35B5E69CB2560382B31023B8FB589F4576AE3AE9,
+	U3CErrorFormatStripTestU3Ed__12_System_Collections_IEnumerator_get_Current_m1BB187FB81B8848A5758AE3C165F4DAEB6F6845F,
+	U3CErrorFormatWithContextStripTestU3Ed__13__ctor_m26B10C661B3A524D2E833B0BED1F03949F9A2897,
+	U3CErrorFormatWithContextStripTestU3Ed__13_System_IDisposable_Dispose_m0363461CC81258F0ECFD80A11A8A87A9E672AAE6,
+	U3CErrorFormatWithContextStripTestU3Ed__13_MoveNext_m57FDD98ADD3A0013A15E5A819CD44F5872202EAA,
+	U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5768753E1B1EFEE75A3BD2746AB08A3A386B4D4B,
+	U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_IEnumerator_Reset_m3BF0B6F4CE586F15FBBDDD3D1CC66767B87ACD63,
+	U3CErrorFormatWithContextStripTestU3Ed__13_System_Collections_IEnumerator_get_Current_m649138D6316A0146FAE924AE098C5A8BF20D59B2,
+	PixelBehaviourTests_RuntimeExistenceTest_mA0422913F6C70F629B121065345D1209EB7F1469,
+	PixelBehaviourTests__ctor_m1C4C994A17955BD9AA7D5418759E16F92C2D3ACD,
+	PixelBehaviourSingleTest_get_IsTestFinished_mAA4A1AF456F87D11173CF0E0900DFE89C2DAEADE,
+	PixelBehaviourSingleTest__ctor_mF918EDC1A9C1242B3B2DCB998144E618556B5CDA,
+	U3CRuntimeExistenceTestU3Ed__0__ctor_m936755BE69188DB14477C947433473834537C568,
+	U3CRuntimeExistenceTestU3Ed__0_System_IDisposable_Dispose_m6E9A9FD302C873719B4D5DBE78FC759BF349B02B,
+	U3CRuntimeExistenceTestU3Ed__0_MoveNext_mE3D5AB8783D06B51223592B7178A0F7E60B7E895,
+	U3CRuntimeExistenceTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD6073DC50858A0DDCDE9D4DD3AACC6E31518D946,
+	U3CRuntimeExistenceTestU3Ed__0_System_Collections_IEnumerator_Reset_mAFCB98948C4DA70D1BE65A25CF8740AC565D3ACC,
+	U3CRuntimeExistenceTestU3Ed__0_System_Collections_IEnumerator_get_Current_m494FFA2B797600A51F48DE69F55F2ED67D13E2CC,
+	WorkerThreadLoggerTests_WorkerThreadThrownExceptionTest_m1D7E4317604E16353D30324996F29F68883A5F69,
+	WorkerThreadLoggerTests_ThrowTestException_m80A42131CF1D8872612135550EF524F669D83D6F,
+	WorkerThreadLoggerTests__ctor_m1F179A8C21AD1B3385C2D2AFFE37B30465E50450,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0__ctor_m9F3C903CE51EC9319B990A4045F135DC9559657B,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0_System_IDisposable_Dispose_mF18D6FA96461A82C2060886404FE5A9A3F98D537,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0_MoveNext_m88CFE4B2CCD1E82D911209F8651D8EF648287B51,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFEF4569F0A34B88A9EEE105C2CBC743C72BDE44,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_IEnumerator_Reset_mC78D204D977FABD97D269E33F5A634ADE8D4E195,
+	U3CWorkerThreadThrownExceptionTestU3Ed__0_System_Collections_IEnumerator_get_Current_m091B4A0E4A6E30714B4FF0C6FE33F4193324C66A,
+};
+static const int32_t s_InvokerIndices[142] = 
+{
+	1219,
+	1246,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1219,
+	1246,
+	2190,
+	1246,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	964,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1219,
+	1246,
+	1191,
+	1246,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+	1219,
+	1246,
+	1246,
+	1046,
+	1246,
+	1191,
+	1219,
+	1246,
+	1219,
+};
+extern const CustomAttributesCacheGenerator g_Pixeltheory_Base_Runtime_Tests_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Pixeltheory_Base_Runtime_Tests_CodeGenModule;
+const Il2CppCodeGenModule g_Pixeltheory_Base_Runtime_Tests_CodeGenModule = 
+{
+	"Pixeltheory.Base.Runtime.Tests.dll",
+	142,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_Pixeltheory_Base_Runtime_Tests_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

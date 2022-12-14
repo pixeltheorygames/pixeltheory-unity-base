@@ -56,7 +56,10 @@
               <e p="Pixeltheory.Base.Editor.Tests.asmdef" t="Include" />
             </e>
             <e p="Runtime" t="Include">
-              <e p="DataManagerTests.cs" t="Include" />
+              <e p="CustomTestClasses" t="Include">
+                <e p="Pixeltheory.Base.Runtime.Tests.CustomClasses.asmdef" t="Include" />
+                <e p="WorkerDomainExceptionThrower.cs" t="Include" />
+              </e>
               <e p="GameObjectKeepAliveTests.cs" t="Include" />
               <e p="LoggingTests.cs" t="Include" />
               <e p="PixelBehaviourTests.cs" t="Include" />
@@ -71,6 +74,7 @@
       <e p="Pixeltheory.Base.Editor.Tests.csproj" t="IncludeRecursive" />
       <e p="Pixeltheory.Base.Runtime.csproj" t="IncludeRecursive" />
       <e p="Pixeltheory.Base.Runtime.Tests.csproj" t="IncludeRecursive" />
+      <e p="Pixeltheory.Base.Runtime.Tests.CustomClasses.csproj" t="IncludeRecursive" />
       <e p="Temp/Bin" t="ExcludeRecursive" />
     </e>
   </component>
