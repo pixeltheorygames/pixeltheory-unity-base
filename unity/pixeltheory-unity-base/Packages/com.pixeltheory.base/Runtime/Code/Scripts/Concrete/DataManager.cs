@@ -7,15 +7,18 @@ using Object = UnityEngine.Object;
 
 namespace Pixeltheory
 {
-    [DefaultExecutionOrder(DataManager<TypeRuntimeData>.DataManagerExecutionOrder)]
+    public static class DataManager
+    {
+        #region Class
+        public const int DataManagerExecutionOrder = Int32.MinValue;
+        #endregion //Class
+    }
+    
+    [DefaultExecutionOrder(DataManager.DataManagerExecutionOrder)]
     [DisallowMultipleComponent]
     public class DataManager<TypeRuntimeData> : PixelBehaviour<DataManager<TypeRuntimeData>>
         where TypeRuntimeData : PixelRuntimeData<TypeRuntimeData>
     {
-        #region Class
-        public const  int DataManagerExecutionOrder = Int32.MinValue;
-        #endregion //Class
-
         #region Instance
         #region Fields
         #region Inspector
