@@ -43,9 +43,7 @@
                 <e p="Debug" t="Include">
                   <e p="Logging.cs" t="Include" />
                 </e>
-                <e p="Partial" t="Include">
-                  <e p="PixelConstants.cs" t="Include" />
-                </e>
+                <e p="Partial" t="Include" />
               </e>
               <e p="Pixeltheory.Base.Runtime.asmdef" t="Include" />
               <e p="Scripts" t="Include">
