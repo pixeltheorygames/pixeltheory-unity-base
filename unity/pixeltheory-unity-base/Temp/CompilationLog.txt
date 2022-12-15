@@ -1,2 +1,0 @@
-# Starting compiling Pixeltheory.Base.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.42f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-54eb8d054c8504991b8e91b0fa081a1d
