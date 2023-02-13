@@ -25,14 +25,13 @@ namespace Pixeltheory
 
         #region Methods
         #region Public
-        public T Borrow(params object[] setArgs)
+        public T Borrow()
         {
             T lendable;
             if (!this.pool.TryTake(out lendable))
             {
                 lendable = new T();
             }
-            lendable.Set(setArgs);
             return lendable;
         }
 
