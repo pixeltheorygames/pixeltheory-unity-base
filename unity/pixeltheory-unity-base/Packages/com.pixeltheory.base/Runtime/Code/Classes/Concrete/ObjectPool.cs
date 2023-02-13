@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Pixeltheory
 {
-    public class ObjectPool<T> where T : Object, IPoolable, new()
+    public class ObjectPool<T> where T : IPoolable, new()
     {
         #region Fields
         #region Private
