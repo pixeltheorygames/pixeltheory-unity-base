@@ -21,7 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Interfaces/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Abstract/PixelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.pixeltheory.base/Runtime/Code/Scripts/Concrete/GameObjectKeepAlive.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../pixeltheory-unity-quadtree/unity/pixeltheory-unity-quadtree/Packages/com.pixeltheory.quadtree/Runtime/Classes/QuadtreeTaskPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../pixeltheory-unity-messaging/unity/pixeltheory-unity-messaging/Packages/com.pixeltheory.messaging/Editor/Code/Data/PixeltheoryMessagingSettingsProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -119,6 +119,7 @@
       <workItem from="1672990096000" duration="1098000" />
       <workItem from="1676097892338" duration="7389000" />
       <workItem from="1676259713717" duration="75000" />
+      <workItem from="1677053893062" duration="1298000" />
     </task>
     <servers />
   </component>
