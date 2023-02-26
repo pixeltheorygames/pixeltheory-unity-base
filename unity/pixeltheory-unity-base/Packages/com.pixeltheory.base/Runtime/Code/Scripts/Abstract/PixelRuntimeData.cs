@@ -27,10 +27,6 @@ namespace Pixeltheory
             }
         }
         #endregion //Unity Messages
-
-        #region Public
-        public abstract void CopyTo(TypeRuntimeData copyTarget);
-        #endregion //Public
         #endregion //Methods
     }
 }

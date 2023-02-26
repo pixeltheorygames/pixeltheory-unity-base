@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 3360
     height: 1837
   m_ShowMode: 4
-  m_Title: Project Settings
+  m_Title: Console
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -43,13 +43,15 @@ MonoBehaviour:
     y: 0
     width: 1155
     height: 1102.5
-  m_MinSize: {x: 201, y: 221}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 10}
   m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
+  - {fileID: 18}
+  - {fileID: 11}
+  - {fileID: 10}
+  m_Selected: 2
+  m_LastSelected: 1
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -71,10 +73,10 @@ MonoBehaviour:
     y: 0
     width: 3360
     height: 1102.5
-  m_MinSize: {x: 477, y: 221}
+  m_MinSize: {x: 202, y: 121}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 12
+  controlID: 92
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectSettingsWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -94,15 +96,15 @@ MonoBehaviour:
     y: 1102.5
     width: 3360
     height: 684.5
-  m_MinSize: {x: 300, y: 221}
-  m_MaxSize: {x: 4000, y: 4021}
-  m_ActualView: {fileID: 11}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 13}
   - {fileID: 14}
-  - {fileID: 15}
-  - {fileID: 11}
-  - {fileID: 12}
-  m_Selected: 2
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -154,8 +156,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 17}
-  m_MainToolbar: {fileID: 17}
+  - {fileID: 20}
+  m_MainToolbar: {fileID: 20}
   m_LastLoadedLayoutName: 
 --- !u!114 &7
 MonoBehaviour:
@@ -199,10 +201,10 @@ MonoBehaviour:
     y: 30
     width: 3360
     height: 1787
-  m_MinSize: {x: 477, y: 442}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
-  controlID: 11
+  controlID: 91
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,7 +215,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -222,15 +224,220 @@ MonoBehaviour:
     y: 0
     width: 2205
     height: 1102.5
-  m_MinSize: {x: 276, y: 121}
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 10}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 15}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 83
+    width: 1154
+    height: 1081.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 2308, y: 2121}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -577
+    m_HBaseRangeMax: 577
+    m_VBaseRangeMin: -530.25
+    m_VBaseRangeMax: 530.25
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 1154
+      height: 1060.5
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 577, y: 530.25}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -577
+      y: -530.25
+      width: 1154
+      height: 1060.5
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 2308, y: 2163}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 83
+    width: 1154
+    height: 1081.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 19f7d35e009fb47818897a6a44f47ed3
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    speed: 2
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_Size:
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,7 +463,7 @@ MonoBehaviour:
     height: 1081.5
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 152
+    ID: 248
     splitterInitialOffset: 311
     currentActiveSplitter: -1
     realSizes:
@@ -281,14 +488,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 10}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1004
       uniqueId: '[pixeltheory-unity-base][suite]'
       name: pixeltheory-unity-base
       fullName: pixeltheory-unity-base
       resultStatus: 1
-      duration: 0.706205
+      duration: 0.8495862
       messages: 
       output: 
       stacktrace: 
@@ -304,7 +511,7 @@ MonoBehaviour:
       name: Pixeltheory.Base.Runtime.Tests.dll
       fullName: /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/ScriptAssemblies/Pixeltheory.Base.Runtime.Tests.dll
       resultStatus: 1
-      duration: 0.5272395
+      duration: 0.6857401
       messages: 
       output: 
       stacktrace: 
@@ -320,7 +527,7 @@ MonoBehaviour:
       name: Pixeltheory
       fullName: Pixeltheory
       resultStatus: 1
-      duration: 0.5223384
+      duration: 0.6776239
       messages: 
       output: 
       stacktrace: 
@@ -336,7 +543,7 @@ MonoBehaviour:
       name: Tests
       fullName: Pixeltheory.Tests
       resultStatus: 1
-      duration: 0.518021
+      duration: 0.6737578
       messages: 
       output: 
       stacktrace: 
@@ -352,7 +559,7 @@ MonoBehaviour:
       name: GameObjectKeepAliveTests
       fullName: Pixeltheory.Tests.GameObjectKeepAliveTests
       resultStatus: 1
-      duration: 0.0284001
+      duration: 0.0368195
       messages: 
       output: 
       stacktrace: 
@@ -368,7 +575,7 @@ MonoBehaviour:
       name: GameObjectKeepAliveSceneLoadTest
       fullName: Pixeltheory.Tests.GameObjectKeepAliveTests.GameObjectKeepAliveSceneLoadTest
       resultStatus: 1
-      duration: 0.0240716
+      duration: 0.0322176
       messages: 
       output: 
       stacktrace: 
@@ -385,7 +592,7 @@ MonoBehaviour:
       name: LoggingTests
       fullName: Pixeltheory.Tests.LoggingTests
       resultStatus: 1
-      duration: 0.3815196
+      duration: 0.5418085
       messages: 
       output: 
       stacktrace: 
@@ -401,7 +608,7 @@ MonoBehaviour:
       name: ErrorFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatStripTest
       resultStatus: 1
-      duration: 0.0684098
+      duration: 0.0733138
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatStripTest>d__12.MoveNext
@@ -425,7 +632,7 @@ MonoBehaviour:
       name: ErrorFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0183454
+      duration: 0.0177821
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatWithContextStripTest>d__13.MoveNext
@@ -449,7 +656,7 @@ MonoBehaviour:
       name: ErrorObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectStripTest
       resultStatus: 1
-      duration: 0.0157479
+      duration: 0.0198446
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectStripTest>d__10.MoveNext
@@ -473,7 +680,7 @@ MonoBehaviour:
       name: ErrorObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.0196775
+      duration: 0.0325338
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectWithContextStripTest>d__11.MoveNext
@@ -497,7 +704,7 @@ MonoBehaviour:
       name: ExceptionStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ExceptionStripTest
       resultStatus: 1
-      duration: 0.0197291
+      duration: 0.0312028
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ExceptionStripTest>d__8.MoveNext
@@ -521,7 +728,7 @@ MonoBehaviour:
       name: ExceptionWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ExceptionWithContextStripTest
       resultStatus: 1
-      duration: 0.024151
+      duration: 0.0321565
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ExceptionWithContextStripTest>d__9.MoveNext
@@ -545,7 +752,7 @@ MonoBehaviour:
       name: LogFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogFormatStripTest
       resultStatus: 1
-      duration: 0.0273956
+      duration: 0.0269426
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogFormatStripTest>d__2.MoveNext
@@ -569,7 +776,7 @@ MonoBehaviour:
       name: LogFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0198648
+      duration: 0.0359572
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogFormatWithContextStripTest>d__3.MoveNext
@@ -593,7 +800,7 @@ MonoBehaviour:
       name: LogObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogObjectStripTest
       resultStatus: 1
-      duration: 0.0230768
+      duration: 0.0441062
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectStripTest>d__0.MoveNext
@@ -617,7 +824,7 @@ MonoBehaviour:
       name: LogObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.0200872
+      duration: 0.0312415
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectWithContextStripTest>d__1.MoveNext
@@ -641,7 +848,7 @@ MonoBehaviour:
       name: WarnFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnFormatStripTest
       resultStatus: 1
-      duration: 0.0192991
+      duration: 0.0479052
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnFormatStripTest>d__6.MoveNext
@@ -665,7 +872,7 @@ MonoBehaviour:
       name: WarnFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0200148
+      duration: 0.0437148
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnFormatWithContextStripTest>d__7.MoveNext
@@ -689,7 +896,7 @@ MonoBehaviour:
       name: WarnObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnObjectStripTest
       resultStatus: 1
-      duration: 0.0197472
+      duration: 0.0406489
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnObjectStripTest>d__4.MoveNext
@@ -713,7 +920,7 @@ MonoBehaviour:
       name: WarnObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.0319227
+      duration: 0.0309547
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<WarnObjectWithContextStripTest>d__5.MoveNext
@@ -737,7 +944,7 @@ MonoBehaviour:
       name: PixelBehaviourTests
       fullName: Pixeltheory.Tests.PixelBehaviourTests
       resultStatus: 1
-      duration: 0.0244623
+      duration: 0.0356705
       messages: 
       output: 
       stacktrace: 
@@ -753,7 +960,7 @@ MonoBehaviour:
       name: RuntimeExistenceTest
       fullName: Pixeltheory.Tests.PixelBehaviourTests.RuntimeExistenceTest
       resultStatus: 1
-      duration: 0.0179069
+      duration: 0.0213962
       messages: 
       output: 
       stacktrace: 
@@ -765,7 +972,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1022
       parentUniqueId: Pixeltheory.Base.Runtime.Tests.dll/Pixeltheory/Tests/[Pixeltheory.Base.Runtime.Tests][Pixeltheory.Tests.PixelBehaviourTests][suite]
-    m_ResultText: LoggingTests (0.382s)
+    m_ResultText: LoggingTests (0.542s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -799,7 +1006,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 10}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1000
       uniqueId: '[pixeltheory-unity-base][suite]'
@@ -849,7 +1056,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &11
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -878,7 +1085,7 @@ MonoBehaviour:
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
---- !u!114 &12
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,7 +1110,7 @@ MonoBehaviour:
     width: 1280
     height: 491
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -940,7 +1147,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &14
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -978,22 +1185,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.pixeltheory.base/Editor/Code/Classes/Settings
+    - Packages/com.pixeltheory.base/Runtime/Code/Scripts/Concrete
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Packages/com.pixeltheory.base/Editor/Code/Classes/Settings
+  - Packages/com.pixeltheory.base/Runtime/Code/Scripts/Concrete
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d03d0000
-    m_LastClickedID: 15824
-    m_ExpandedIDs: 00000000843d0000863d0000883d00008a3d00008c3d00008e3d0000903d0000923d0000943d0000963d0000983d0000a43d000000ca9a3bffffff7f
+    m_SelectedIDs: ae3d0000
+    m_LastClickedID: 15790
+    m_ExpandedIDs: 000000007a3d00007c3d00007e3d0000803d0000823d0000843d0000863d0000883d00008a3d00008c3d00008e3d0000903d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1021,7 +1228,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000843d0000863d0000883d00008a3d00008c3d00008e3d0000903d0000923d0000943d0000963d0000983d0000
+    m_ExpandedIDs: 000000007a3d00007c3d00007e3d0000803d0000823d0000843d0000863d0000883d00008a3d00008c3d00008e3d0000903d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1046,9 +1253,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d43d0000
-    m_LastClickedInstanceID: 15828
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 98310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1077,7 +1284,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 222
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1098,11 +1305,11 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 908
-    width: 1280
-    height: 491
+    y: 1185.5
+    width: 3360
+    height: 663.5
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,9 +1337,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d43d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5efbffff
+      m_ExpandedIDs: f4f2ffff16f3ffffb6f4ffffccf4ffffeef4ffff02f6ffffd6f6fffff8f6ffff80f8ffff0cf9ffff30f9ffffbafaffff6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1156,7 +1363,32 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 341c59ca1922d4d6794abf4f202a009c
---- !u!114 &17
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Rider.Editor:Packages.Rider.Editor:RiderScriptEditorPersistedState
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Failed to load
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 320
+    height: 550
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
