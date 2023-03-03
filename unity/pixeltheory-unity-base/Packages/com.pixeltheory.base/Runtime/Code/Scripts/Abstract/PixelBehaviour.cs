@@ -103,11 +103,11 @@ namespace Pixeltheory
         #region Unity Messages
         protected override void Awake()
         {
-            Assert.IsNotNull( this.runtimeDataInjector );
-            
             base.Awake();
             if (!this.isBeingDestroyed)
             {
+                this.runtimeDataInjector = 
+                    this.runtimeDataInjector == null ? GameObject.FindObjectOfType<DataManager<TypeRuntimeData>>() : this.runtimeDataInjector;
                 this.runtimeData = this.runtimeDataInjector.GetData();   
             }
         }
