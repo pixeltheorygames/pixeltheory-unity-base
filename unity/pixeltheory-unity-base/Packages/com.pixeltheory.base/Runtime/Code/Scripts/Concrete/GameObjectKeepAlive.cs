@@ -12,10 +12,10 @@ namespace Pixeltheory
         protected virtual void Awake()
         {
             UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
-            Logging.Log
+            PixelLog.Log
             (
                 "[{0}] Setting as persistent through scene loads/unloads.",
-                typeof(GameObjectKeepAlive).FullName
+                this.gameObject.name
             );
         }
         #endregion //Unity Messages

@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace Pixeltheory.Debug
 {
-    public static class Logging
+    public static class PixelLog
     {
         #region Class
         #region Methods

@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onlyAllowSingleInstance: 0
-  blackboard: {fileID: 0}
+  blackboard: {fileID: 11400000, guid: 0221b8220e9894d72ace9716b1049dd8, type: 2}
 --- !u!4 &1514358011
 Transform:
   m_ObjectHideFlags: 0

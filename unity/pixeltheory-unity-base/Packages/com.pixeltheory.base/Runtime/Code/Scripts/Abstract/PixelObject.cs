@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Pixeltheory
 {
     [Serializable]
-    public abstract class PixelScriptableObject : ScriptableObject 
+    public abstract class PixelObject : ScriptableObject 
     {
         /*
          * Reserved for future use.

@@ -12,13 +12,13 @@ namespace Pixeltheory.Tests.CustomTestClasses
     {
         public static void Main()
         {
-            Logging.Log(AppDomain.CurrentDomain.FriendlyName);
+            PixelLog.Log(AppDomain.CurrentDomain.FriendlyName);
             WorkerDomainExceptionThrower workerDomainExceptionThrower = new WorkerDomainExceptionThrower();
         }
         
         public WorkerDomainExceptionThrower()
         {
-            //Logging.Log(AppDomain.CurrentDomain.FriendlyName);
+            //PixelLog.Log(AppDomain.CurrentDomain.FriendlyName);
             //throw new Exception("Exception on worker thread.");
         }
     }   

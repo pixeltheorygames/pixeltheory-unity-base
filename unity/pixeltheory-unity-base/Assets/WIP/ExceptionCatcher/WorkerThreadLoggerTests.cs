@@ -23,10 +23,10 @@ namespace Pixeltheory.Tests
             AppDomain workerDomain = AppDomain.CreateDomain("Worker Domain");
             workerDomain.ExecuteAssemblyByName(testClassesAssembly.GetName());
 
-            Logging.Log(AppDomain.CurrentDomain.FriendlyName);
+            PixelLog.Log(AppDomain.CurrentDomain.FriendlyName);
             
             // LogAssert.Expect(LogType.Exception, "Exception: Exception on worker thread.");
-            // Logging.Warn(AppDomain.CurrentDomain.ToString());
+            // PixelLog.Warn(AppDomain.CurrentDomain.ToString());
             // LogAssert.Expect(LogType.Exception, "[Exception] Exception: Exception on worker thread.");
             // GameObject testGameObject =
             //       new GameObject
@@ -37,7 +37,7 @@ namespace Pixeltheory.Tests
             
             
              
-             // Logging.Warn(Thread.CurrentThread.ManagedThreadId);
+             // PixelLog.Warn(Thread.CurrentThread.ManagedThreadId);
              // ThreadStart threadStart = this.ThrowTestException;
              // Thread testThread = new Thread(threadStart);
              // testThread.Start();

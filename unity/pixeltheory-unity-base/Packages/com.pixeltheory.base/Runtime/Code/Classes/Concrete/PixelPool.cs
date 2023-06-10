@@ -1,10 +1,9 @@
 using System.Collections.Concurrent;
-using UnityEngine;
 
 
 namespace Pixeltheory
 {
-    public class ObjectPool<T> where T : IPoolable, new()
+    public class PixelPool<T> where T : IPoolable, new()
     {
         #region Fields
         #region Private
@@ -13,7 +12,7 @@ namespace Pixeltheory
         #endregion //Fields
 
         #region Constructor
-        public ObjectPool(int initialAmount = 0)
+        public PixelPool(int initialAmount = 0)
         {
             this.pool = new ConcurrentBag<T>();
             for (int i = 0; i < initialAmount; i++)

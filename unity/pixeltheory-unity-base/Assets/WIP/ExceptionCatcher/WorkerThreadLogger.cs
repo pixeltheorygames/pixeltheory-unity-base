@@ -16,7 +16,7 @@ namespace Pixeltheory.Debug
         #region Unity Messages
         private void Start()
         {
-            Logging.Warn(AppDomain.CurrentDomain.ToString());
+            PixelLog.Warn(AppDomain.CurrentDomain.ToString());
             AppDomain.CurrentDomain.UnhandledException += this.WorkerThreadUnhandledExceptionHandler;
         }
         #endregion //Unity Messages
@@ -24,7 +24,7 @@ namespace Pixeltheory.Debug
         #region Event Handlers
         private void WorkerThreadUnhandledExceptionHandler(object obj, UnhandledExceptionEventArgs args)
         {
-            Logging.Exception(args.ExceptionObject as Exception);
+            PixelLog.Exception(args.ExceptionObject as Exception);
         }
         #endregion //Event Handlers
         #endregion//Methods

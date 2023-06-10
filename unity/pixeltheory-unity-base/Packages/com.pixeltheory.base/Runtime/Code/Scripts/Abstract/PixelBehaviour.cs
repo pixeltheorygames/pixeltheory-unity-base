@@ -1,20 +1,18 @@
-﻿using System;
-using Pixeltheory.Debug;
+﻿using Pixeltheory.Debug;
 using UnityEngine;
-using UnityEngine.Assertions;
 
 using Object = UnityEngine.Object;
 
 
 namespace Pixeltheory
 {
-    public abstract class PixelBehaviour<TypePixelBehaviour> : MonoBehaviour where TypePixelBehaviour : PixelBehaviour<TypePixelBehaviour>
+    public abstract class PixelBehaviour<TypeSelf> : MonoBehaviour where TypeSelf : PixelBehaviour<TypeSelf>
     {
         #region Class
         #region Fields
         #region Private
-        private static TypePixelBehaviour instance = null;
-        private static Boolean gameIsShuttingDown = false;
+        private static TypeSelf instance = null;
+        private static bool gameIsShuttingDown = false;
         #endregion //Private
         #endregion //Fields
         #endregion //Class
@@ -22,7 +20,7 @@ namespace Pixeltheory
         #region Instance
         #region Fields
         #region Inspector
-        [Header("PixelBehaviour Single Instance")] 
+        [Header("PixelBehaviour")] 
         [SerializeField] private bool onlyAllowSingleInstance = false;
         #endregion //Inspector
 
@@ -37,16 +35,16 @@ namespace Pixeltheory
         {
             if (this.onlyAllowSingleInstance)
             {
-                string className = typeof(TypePixelBehaviour).FullName;
+                string className = typeof(TypeSelf).FullName;
                 bool setNewInstance = 
-                    !PixelBehaviour<TypePixelBehaviour>.gameIsShuttingDown &&
-                    PixelBehaviour<TypePixelBehaviour>.instance == null || 
-                    (PixelBehaviour<TypePixelBehaviour>.instance.GetInstanceID() != this.GetInstanceID() 
-                        && PixelBehaviour<TypePixelBehaviour>.instance.isBeingDestroyed);
+                    !PixelBehaviour<TypeSelf>.gameIsShuttingDown &&
+                    PixelBehaviour<TypeSelf>.instance == null || 
+                    (PixelBehaviour<TypeSelf>.instance.GetInstanceID() != this.GetInstanceID() 
+                        && PixelBehaviour<TypeSelf>.instance.isBeingDestroyed);
                 if (setNewInstance)
                 {
-                    PixelBehaviour<TypePixelBehaviour>.instance = this as TypePixelBehaviour;
-                    Logging.Log("[{0}] Setting first instance as single instance.", className);
+                    PixelBehaviour<TypeSelf>.instance = this as TypeSelf;
+                    PixelLog.Log("[{0}] Setting first instance as single instance.", className);
                 }
                 else
                 {
@@ -59,7 +57,7 @@ namespace Pixeltheory
                     {
                         GameObject.Destroy(this as Object);
                     }
-                    Logging.Warn("[{0}] Instance already exists; destroying self.", className);
+                    PixelLog.Warn("[{0}] Instance already exists; destroying self.", className);
                 }
             }
         }
@@ -67,58 +65,53 @@ namespace Pixeltheory
         protected virtual void OnDestroy()
         {
             this.isBeingDestroyed = true;
-            if (this.onlyAllowSingleInstance && PixelBehaviour<TypePixelBehaviour>.instance == this as TypePixelBehaviour)
+            if (this.onlyAllowSingleInstance && PixelBehaviour<TypeSelf>.instance == this as TypeSelf)
             {
-                PixelBehaviour<TypePixelBehaviour>.instance = null;
-                Logging.Log("[{0}] Singleton instance is being destroyed.", typeof(TypePixelBehaviour).FullName);
+                PixelBehaviour<TypeSelf>.instance = null;
+                PixelLog.Log("[{0}] Singleton instance is being destroyed.", typeof(TypeSelf).FullName);
             }
         }
 
         protected virtual void OnApplicationQuit()
         {
-            PixelBehaviour<TypePixelBehaviour>.gameIsShuttingDown = true;
+            PixelBehaviour<TypeSelf>.gameIsShuttingDown = true;
         }
         #endregion //Unity Messages
         #endregion //Methods
         #endregion //Instance
     }
     
-    public abstract class PixelBehaviour<TypePixelBehaviour, TypeRuntimeData> : PixelBehaviour<TypePixelBehaviour> 
-        where TypePixelBehaviour : PixelBehaviour<TypePixelBehaviour>
-        where TypeRuntimeData : PixelRuntimeData<TypeRuntimeData>
+    public abstract class PixelBehaviour<TypeSelf, TypeData> : PixelBehaviour<TypeSelf> 
+        where TypeSelf : PixelBehaviour<TypeSelf>
+        where TypeData : PixelObject
     {
-        #region Instance
         #region Fields
         #region Inspector
-        [Header("PixelBehaviour Data Injection")]
-        [SerializeField] private DataManager<TypeRuntimeData> runtimeDataInjector;
+        [SerializeField] private Blackboard blackboard;
         #endregion //Inspector
-    
-        #region Protected
-        protected TypeRuntimeData runtimeData;
-        #endregion //Protected
+
+        #region Private
+        private TypeData blackboardData;
+        #endregion //Private
         #endregion //Fields
-    
+
+        #region Properties
+        #region Protected
+        protected TypeData BlackboardData => this.blackboardData;
+        #endregion //Protected
+        #endregion //Properties
+
         #region Methods
         #region Unity Messages
         protected override void Awake()
         {
             base.Awake();
-            if (!this.isBeingDestroyed)
+            if (this.blackboardData == null)
             {
-                this.runtimeDataInjector = 
-                    this.runtimeDataInjector == null ? GameObject.FindObjectOfType<DataManager<TypeRuntimeData>>() : this.runtimeDataInjector;
-                this.runtimeData = this.runtimeDataInjector.GetData();   
+                this.blackboardData = this.blackboard.Data as TypeData;
             }
-        }
-    
-        protected override void OnDestroy()
-        {
-            this.runtimeData = null;
-            base.OnDestroy();
         }
         #endregion //Unity Messages
         #endregion //Methods
-        #endregion //Instance
     }
 }
