@@ -22,7 +22,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Log(objectPassthru(testObject));
+            PixelLog.Log(objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -38,7 +38,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Log(testContextObject, objectPassthru(testObject));
+            PixelLog.Log(testContextObject, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -54,7 +54,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Log(format, objectPassthru(testObject));
+            PixelLog.Log(format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -71,7 +71,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Log(testContextObject, format, objectPassthru(testObject));
+            PixelLog.Log(testContextObject, format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -86,7 +86,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Warn(objectPassthru(testObject));
+            PixelLog.Warn(objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -102,7 +102,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Warn(testContextObject, objectPassthru(testObject));
+            PixelLog.Warn(testContextObject, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -118,7 +118,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Warn(format, objectPassthru(testObject));
+            PixelLog.Warn(format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -135,7 +135,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Warn(testContextObject, format, objectPassthru(testObject));
+            PixelLog.Warn(testContextObject, format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -150,7 +150,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Exception(exceptionPassthru(testExcetion));
+            PixelLog.Exception(exceptionPassthru(testExcetion));
             yield return null;
             Assert.Pass();
         }
@@ -166,7 +166,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Exception(testContextObject, exceptionPassthru(testExcetion));
+            PixelLog.Exception(testContextObject, exceptionPassthru(testExcetion));
             yield return null;
             Assert.Pass();
         }
@@ -181,7 +181,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Error(objectPassthru(testObject));
+            PixelLog.Error(objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -197,7 +197,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x; 
                 };
-            Logging.Error(testContextObject, objectPassthru(testObject));
+            PixelLog.Error(testContextObject, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -213,7 +213,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Error(format, objectPassthru(testObject));
+            PixelLog.Error(format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
@@ -230,7 +230,7 @@ namespace Pixeltheory.Tests
                     Assert.Fail();
                     return x;
                 };
-            Logging.Error(testContextObject, format, objectPassthru(testObject));
+            PixelLog.Error(testContextObject, format, objectPassthru(testObject));
             yield return null;
             Assert.Pass();
         }
