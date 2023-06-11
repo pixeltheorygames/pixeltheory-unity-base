@@ -6,7 +6,9 @@ using Object = UnityEngine.Object;
 
 namespace Pixeltheory
 {
-    public abstract class PixelBehaviour<TypeSelf> : MonoBehaviour where TypeSelf : PixelBehaviour<TypeSelf>
+    public abstract class PixelBehaviour<TypeSelf, TypeData> : MonoBehaviour 
+        where TypeSelf : PixelBehaviour<TypeSelf, TypeData>
+        where TypeData : PixelObject
     {
         #region Class
         #region Fields
@@ -22,96 +24,90 @@ namespace Pixeltheory
         #region Inspector
         [Header("PixelBehaviour")] 
         [SerializeField] private bool onlyAllowSingleInstance = false;
+        [SerializeField] private Blackboard blackboard;
         #endregion //Inspector
 
         #region Protected
         protected bool isBeingDestroyed = false;
+        protected string fullName = typeof(TypeSelf).FullName;
         #endregion //Protected
+
+        #region Private
+        private TypeData blackboardData;
+        #endregion //Private
         #endregion //Fields
+        
+        #region Properties
+        #region Protected
+        protected TypeData BlackboardData => this.blackboardData;
+        #endregion //Protected
+        #endregion //Properties
         
         #region Methods
         #region Unity Messages
         protected virtual void Awake()
         {
+            bool destroySelf = false;
             if (this.onlyAllowSingleInstance)
             {
-                string className = typeof(TypeSelf).FullName;
-                bool setNewInstance = 
-                    !PixelBehaviour<TypeSelf>.gameIsShuttingDown &&
-                    PixelBehaviour<TypeSelf>.instance == null || 
-                    (PixelBehaviour<TypeSelf>.instance.GetInstanceID() != this.GetInstanceID() 
-                        && PixelBehaviour<TypeSelf>.instance.isBeingDestroyed);
-                if (setNewInstance)
+                if (PixelBehaviour<TypeSelf, TypeData>.instance == null)
                 {
-                    PixelBehaviour<TypeSelf>.instance = this as TypeSelf;
-                    PixelLog.Log("[{0}] Setting first instance as single instance.", className);
+                    PixelBehaviour<TypeSelf, TypeData>.instance = this as TypeSelf;
+                    PixelLog.Log("[{0}] Setting first instance as single instance.", this.fullName);
                 }
-                else
+                else if (PixelBehaviour<TypeSelf, TypeData>.instance.GetInstanceID() != this.GetInstanceID())
                 {
-                    this.isBeingDestroyed = true;
-                    if (Application.isEditor && !Application.isPlaying)
+                    
+                    if (PixelBehaviour<TypeSelf, TypeData>.instance.isBeingDestroyed 
+                        && !PixelBehaviour<TypeSelf, TypeData>.gameIsShuttingDown)
                     {
-                        GameObject.DestroyImmediate(this as Object);
+                        PixelBehaviour<TypeSelf, TypeData>.instance = this as TypeSelf;
+                        PixelLog.Log
+                        (
+                            "[{0}] Changing single instance due to current single instance being destroyed.",
+                            this.fullName
+                        );
                     }
                     else
                     {
-                        GameObject.Destroy(this as Object);
+                        destroySelf = true;
                     }
-                    PixelLog.Warn("[{0}] Instance already exists; destroying self.", className);
                 }
+            }
+            if (destroySelf)
+            {
+                this.isBeingDestroyed = true;
+                if (Application.isEditor && !Application.isPlaying)
+                {
+                    GameObject.DestroyImmediate(this as Object);
+                }
+                else
+                {
+                    GameObject.Destroy(this as Object);
+                }
+            }
+            else
+            {
+                this.blackboardData = this.blackboard.Data as TypeData;
             }
         }
 
         protected virtual void OnDestroy()
         {
             this.isBeingDestroyed = true;
-            if (this.onlyAllowSingleInstance && PixelBehaviour<TypeSelf>.instance == this as TypeSelf)
+            if (this.onlyAllowSingleInstance && PixelBehaviour<TypeSelf, TypeData>.instance == this as TypeSelf)
             {
-                PixelBehaviour<TypeSelf>.instance = null;
-                PixelLog.Log("[{0}] Singleton instance is being destroyed.", typeof(TypeSelf).FullName);
+                PixelBehaviour<TypeSelf, TypeData>.instance = null;
+                PixelLog.Log("[{0}] Singleton instance is being destroyed.", this.fullName);
             }
         }
 
         protected virtual void OnApplicationQuit()
         {
-            PixelBehaviour<TypeSelf>.gameIsShuttingDown = true;
+            PixelBehaviour<TypeSelf, TypeData>.gameIsShuttingDown = true;
         }
         #endregion //Unity Messages
         #endregion //Methods
         #endregion //Instance
-    }
-    
-    public abstract class PixelBehaviour<TypeSelf, TypeData> : PixelBehaviour<TypeSelf> 
-        where TypeSelf : PixelBehaviour<TypeSelf>
-        where TypeData : PixelObject
-    {
-        #region Fields
-        #region Inspector
-        [SerializeField] private Blackboard blackboard;
-        #endregion //Inspector
-
-        #region Private
-        private TypeData blackboardData;
-        #endregion //Private
-        #endregion //Fields
-
-        #region Properties
-        #region Protected
-        protected TypeData BlackboardData => this.blackboardData;
-        #endregion //Protected
-        #endregion //Properties
-
-        #region Methods
-        #region Unity Messages
-        protected override void Awake()
-        {
-            base.Awake();
-            if (this.blackboardData == null)
-            {
-                this.blackboardData = this.blackboard.Data as TypeData;
-            }
-        }
-        #endregion //Unity Messages
-        #endregion //Methods
     }
 }

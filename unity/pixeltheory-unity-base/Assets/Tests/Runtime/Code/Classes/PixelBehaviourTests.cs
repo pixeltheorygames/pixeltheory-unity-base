@@ -32,7 +32,7 @@ namespace Pixeltheory.Tests
             Assert.IsTrue((testPixelBehaviourSingleOne != null) && (testPixelBehaviourSingleTwo == null));
         }
 
-        private class PixelBehaviourSingleTest : PixelBehaviour<PixelBehaviourSingleTest>, IMonoBehaviourTest
+        private class PixelBehaviourSingleTest : PixelBehaviour<PixelBehaviourSingleTest, PixelObject>, IMonoBehaviourTest
         {
             public bool IsTestFinished => true;
         }

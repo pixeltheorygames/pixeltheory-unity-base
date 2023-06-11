@@ -10,7 +10,7 @@ namespace Pixeltheory.Debug
     * threads, are some of the guesses the community has as to when exceptions are silently killed and
     * the engine continues as if nothing happened.
     */
-    public class WorkerThreadLogger : PixelBehaviour<WorkerThreadLogger>
+    public class WorkerThreadLogger : PixelBehaviour<WorkerThreadLogger, PixelObject>
     {
         #region Methods
         #region Unity Messages
