@@ -5,7 +5,8 @@ Base library package for use with Unity projects. Includes logging, worker threa
 Pick a protocol to use for downloading the package. SSH if you have already uploaded a public key to Github, and can use SSH to access repositories. HTTPS if you would rather "Login with Github" in your browsewr rather than upload a public key.
 
 Copy one of the below links, depending on which protocol you have chosen:
-* SSH : ssh://git@github.com/pixeltheorygames/pixeltheory-unity-base.git?path=/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base
+* SSH : 
+ssh://git@github.<area>com/pixeltheorygames/pixeltheory-unity-base.git?path=/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base
 * HTTPS : https:/<area>/github.com/pixeltheorygames/pixeltheory-unity-base.git?path=/unity/pixeltheory-unity-base/Packages/com.pixeltheory.base
 
 Open up the PackageManager in the Unity Editor.
