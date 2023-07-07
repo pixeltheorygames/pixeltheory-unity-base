@@ -36,7 +36,12 @@ namespace Pixeltheory
             else
             {
                 this.hideFlags = HideFlags.None;
-                Resources.UnloadAsset(this); //We have to unload instead of destroying because this is an asset.
+                if (Application.isPlaying && !Application.isEditor)
+                {
+                    // If we are in a built Player, and in play mode, we unload the unused
+                    // blackboard  to conserve on memory over in the unmanaged memory side.
+                    Resources.UnloadAsset(this);   
+                }
             }
         }
         #endregion //Unity Messages
