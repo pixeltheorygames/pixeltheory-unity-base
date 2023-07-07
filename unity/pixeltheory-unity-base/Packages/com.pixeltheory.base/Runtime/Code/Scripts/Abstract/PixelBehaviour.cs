@@ -88,7 +88,7 @@ namespace Pixeltheory
             }
             else
             {
-                this.blackboard = this.blackboard.SharedInstance;
+                this.blackboard = PixelBlackboard<TypeData>.SharedInstance;
             }
         }
 

@@ -13,30 +13,34 @@ namespace Pixeltheory
         private static TypeSelf sharedData;
         #endregion //Private
         #endregion //Fields
+
+        #region Properties
+        #region Public
+        public static TypeSelf SharedInstance => PixelBlackboard<TypeSelf>.sharedData;
+        #endregion //Public
+        #endregion //Properties
         #endregion //Class
 
         #region Instance
-        #region Properties
-        #region Public
-        public TypeSelf SharedInstance
+        #region Methods
+        #region Unity Messages
+        public void OnEnable()
         {
-            get
+            // This asset should only lives in unmanaged memory, so OnEnable
+            // is called when this asset is first loaded into unmanaged memory.
+            if (PixelBlackboard<TypeSelf>.sharedData == null)
             {
-                if (PixelBlackboard<TypeSelf>.sharedData == null)
-                {
-                    this.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontUnloadUnusedAsset;
-                    PixelBlackboard<TypeSelf>.sharedData = this as TypeSelf;
-                }
-                else
-                {
-                    this.hideFlags = HideFlags.None;
-                    Resources.UnloadAsset(this); //We have unload instead of destroying because this is an asset.
-                }
-                return PixelBlackboard<TypeSelf>.sharedData;
+                this.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontUnloadUnusedAsset;
+                PixelBlackboard<TypeSelf>.sharedData = this as TypeSelf;
+            }
+            else
+            {
+                this.hideFlags = HideFlags.None;
+                Resources.UnloadAsset(this); //We have to unload instead of destroying because this is an asset.
             }
         }
-        #endregion //Public
-        #endregion //Properties
+        #endregion //Unity Messages
+        #endregion //Methods
         #endregion //Instance
     }
 }
