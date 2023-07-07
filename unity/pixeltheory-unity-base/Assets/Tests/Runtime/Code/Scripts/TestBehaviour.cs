@@ -10,7 +10,7 @@ public class TestBehaviour : PixelBehaviour<TestBehaviour, TestRuntimeData>
     #region Unity Messages
     private void Start()
     {
-        PixelLog.Log(this.BlackboardData.TestString);
+        PixelLog.Log(this.Blackboard.TestString);
 
         if (SceneManager.GetActiveScene().name == "SampleSceneDataOne")
         {

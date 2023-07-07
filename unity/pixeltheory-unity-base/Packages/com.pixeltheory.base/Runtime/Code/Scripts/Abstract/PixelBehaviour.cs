@@ -1,14 +1,12 @@
 ﻿using Pixeltheory.Debug;
 using UnityEngine;
 
-using Object = UnityEngine.Object;
-
 
 namespace Pixeltheory
 {
     public abstract class PixelBehaviour<TypeSelf, TypeData> : MonoBehaviour 
         where TypeSelf : PixelBehaviour<TypeSelf, TypeData>
-        where TypeData : PixelObject
+        where TypeData : PixelBlackboard<TypeData>
     {
         #region Class
         #region Fields
@@ -24,22 +22,24 @@ namespace Pixeltheory
         #region Inspector
         [Header("PixelBehaviour")] 
         [SerializeField] private bool onlyAllowSingleInstance = false;
-        [SerializeField] private Blackboard blackboard;
+        [SerializeField] private TypeData blackboard;
         #endregion //Inspector
 
         #region Protected
-        protected bool isBeingDestroyed = false;
-        protected string fullName = typeof(TypeSelf).FullName;
+        
         #endregion //Protected
 
         #region Private
-        private TypeData blackboardData;
+        private bool isBeingDestroyed = false;
+        private readonly string fullName = typeof(TypeSelf).FullName;
         #endregion //Private
         #endregion //Fields
         
         #region Properties
         #region Protected
-        protected TypeData BlackboardData => this.blackboardData;
+        protected TypeData Blackboard => this.blackboard;
+        protected bool IsBeingDestroyed => this.isBeingDestroyed;
+        protected string PixelBehaviourFullName => this.fullName;
         #endregion //Protected
         #endregion //Properties
         
@@ -88,7 +88,7 @@ namespace Pixeltheory
             }
             else
             {
-                this.blackboardData = this.blackboard.Data as TypeData;
+                this.blackboard = this.blackboard.SharedInstance;
             }
         }
 

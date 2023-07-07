@@ -1,9 +1,9 @@
 namespace Pixeltheory
 {
-    public static partial class PixelConstants
+    public static class PixelBaseConstants
     {
         /*
-         *  Partial class other Pixeltheory packages can extend
+         *  Partial class other Pixeltheory packages can inherit
          *  and add their needed static constants.
          */
     }

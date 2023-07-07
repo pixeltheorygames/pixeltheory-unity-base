@@ -10,23 +10,23 @@ namespace Pixeltheory.Debug
     * threads, are some of the guesses the community has as to when exceptions are silently killed and
     * the engine continues as if nothing happened.
     */
-    public class WorkerThreadLogger : PixelBehaviour<WorkerThreadLogger, PixelObject>
-    {
-        #region Methods
-        #region Unity Messages
-        private void Start()
-        {
-            PixelLog.Warn(AppDomain.CurrentDomain.ToString());
-            AppDomain.CurrentDomain.UnhandledException += this.WorkerThreadUnhandledExceptionHandler;
-        }
-        #endregion //Unity Messages
-
-        #region Event Handlers
-        private void WorkerThreadUnhandledExceptionHandler(object obj, UnhandledExceptionEventArgs args)
-        {
-            PixelLog.Exception(args.ExceptionObject as Exception);
-        }
-        #endregion //Event Handlers
-        #endregion//Methods
-    }   
+    // public class WorkerThreadLogger : PixelBehaviour<WorkerThreadLogger, PixelObject>
+    // {
+    //     #region Methods
+    //     #region Unity Messages
+    //     private void Start()
+    //     {
+    //         PixelLog.Warn(AppDomain.CurrentDomain.ToString());
+    //         AppDomain.CurrentDomain.UnhandledException += this.WorkerThreadUnhandledExceptionHandler;
+    //     }
+    //     #endregion //Unity Messages
+    //
+    //     #region Event Handlers
+    //     private void WorkerThreadUnhandledExceptionHandler(object obj, UnhandledExceptionEventArgs args)
+    //     {
+    //         PixelLog.Exception(args.ExceptionObject as Exception);
+    //     }
+    //     #endregion //Event Handlers
+    //     #endregion//Methods
+    // }   
 }

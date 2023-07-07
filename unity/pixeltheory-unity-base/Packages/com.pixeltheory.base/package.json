@@ -9,7 +9,8 @@
     "Base",
     "Debug",
     "Logger",
-    "ObjectPool"
+    "ObjectPool",
+    "Blackboard"
   ],
   "author": {
     "name": "Pixeltheory Games",
