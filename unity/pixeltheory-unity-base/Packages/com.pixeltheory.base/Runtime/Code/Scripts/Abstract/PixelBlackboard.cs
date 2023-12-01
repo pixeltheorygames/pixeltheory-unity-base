@@ -30,7 +30,7 @@ namespace Pixeltheory
             // is called when this asset is first loaded into unmanaged memory.
             if (PixelBlackboard<TypeSelf>.sharedData == null)
             {
-                this.hideFlags = HideFlags.DontSave;
+                this.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontUnloadUnusedAsset;
                 PixelBlackboard<TypeSelf>.sharedData = this as TypeSelf;
             }
             else
