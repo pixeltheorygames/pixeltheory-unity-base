@@ -1,48 +1,61 @@
 using System;
+using System.Collections.Generic;
+using Pixeltheory.Debug;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace Pixeltheory
 {
     [Serializable]
-    public abstract class PixelBlackboard<TypeSelf> : PixelObject where TypeSelf : PixelObject
+    public abstract class PixelBlackboard<TypeData> : PixelObject 
+        where TypeData : PixelObject
     {
         #region Class
         #region Fields
         #region Private
-        private static TypeSelf sharedData;
+        private static TypeData sharedData;
         #endregion //Private
         #endregion //Fields
-
-        #region Properties
-        #region Public
-        public static TypeSelf SharedInstance => PixelBlackboard<TypeSelf>.sharedData;
-        #endregion //Public
-        #endregion //Properties
-        #endregion //Class
+        #endregion Class
 
         #region Instance
+        #region Fields
+        #region Inspector
+        [SerializeField] private TypeData defaultData;
+        [SerializeField] private List<PixelKeyValuePair<SceneAsset, TypeData>> sceneToDataList;
+        #endregion //Inspector
+        #endregion //Fields
+        
+        #region Properties
+        #region Public
+        public TypeData Data => PixelBlackboard<TypeData>.sharedData;
+        #endregion //Public
+        #endregion //Properties
+        
         #region Methods
         #region Unity Messages
         public void OnEnable()
         {
-            // This asset should only lives in unmanaged memory, so OnEnable
-            // is called when this asset is first loaded into unmanaged memory.
-            if (PixelBlackboard<TypeSelf>.sharedData == null)
+            /*
+             *  Ellis 2023.12.22
+             *  We can no longer use Application.IsPlaying to differentiate between non-play edit mode and play mode
+             *  in the editor. OnEnable seems to be only called once, regardless of Editor mode, so the work around
+             *  of using Application.IsPlaying is no longer needed, and actually does not work anymore.
+             */
+            string sceneName = SceneManager.GetActiveScene().name;
+            TypeData dataToClone = this.defaultData;
+            foreach (PixelKeyValuePair<SceneAsset, TypeData> kvPair in this.sceneToDataList)
             {
-                this.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontUnloadUnusedAsset;
-                PixelBlackboard<TypeSelf>.sharedData = this as TypeSelf;
-            }
-            else
-            {
-                this.hideFlags = HideFlags.None;
-                if (Application.isPlaying && !Application.isEditor)
+                SceneAsset sceneAsset = kvPair.Key;
+                if (sceneName == sceneAsset.name)
                 {
-                    // If we are in a built Player, and in play mode, we unload the unused
-                    // blackboard  to conserve on memory over in the unmanaged memory side.
-                    Resources.UnloadAsset(this);   
+                    dataToClone = kvPair.Value;
+                    break;
                 }
             }
+            PixelBlackboard<TypeData>.sharedData = PixelBlackboard<TypeData>.Instantiate(dataToClone);
         }
         #endregion //Unity Messages
         #endregion //Methods

@@ -2,7 +2,7 @@ using Pixeltheory;
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="TestRuntimeData", menuName = "Pixeltheory/Tests/Data/TestRuntimeData")]
-public class TestRuntimeData : PixelBlackboard<TestRuntimeData>
+public class TestRuntimeData : PixelObject
 {
     #region Fields
     #region Inspector

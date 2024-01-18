@@ -4,17 +4,17 @@ using Pixeltheory.Debug;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestBehaviour : PixelBehaviour<TestBehaviour, TestRuntimeData>
+public class TestBehaviour : PixelBehaviour<TestBlackboard, TestRuntimeData>
 {
     #region Methods
     #region Unity Messages
     private void Start()
     {
-        PixelLog.Log(this.Blackboard.TestString);
+        //PixelLog.Log(this.Blackboard.Data.TestString);
 
         if (SceneManager.GetActiveScene().name == "SampleSceneDataOne")
-        {
-            this.StartCoroutine(this.TransitionToSampleSceneDataTwo(5.0f));
+        { 
+            //this.StartCoroutine(this.TransitionToSampleSceneDataTwo(5.0f));
         }
     }
     #endregion //Unity Messages
