@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif //UNITY_EDITOR
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -48,7 +46,7 @@ namespace Pixeltheory
         #region Methods
         #region Unity Messages
         #if UNITY_EDITOR
-        protected virtual void OnValidate()
+        private void OnValidate()
         {
             this.sceneNameToDataList.Clear();
             foreach (PixelKeyValuePair<SceneAsset, TypeData> kvPair  in this.sceneToDataList)
@@ -61,7 +59,7 @@ namespace Pixeltheory
         }
         #endif //Unity_Editor
 
-        protected virtual void OnEnable()
+        private void OnEnable()
         {
             /*
              *  Ellis 2023.12.22
