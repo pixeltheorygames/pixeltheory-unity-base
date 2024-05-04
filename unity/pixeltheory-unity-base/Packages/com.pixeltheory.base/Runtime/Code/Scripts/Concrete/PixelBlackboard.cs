@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 namespace Pixeltheory.Blackboard
 {
     [Serializable]
-    [CreateAssetMenu(fileName ="PixelBlackboard", menuName = "Pixeltheory/Tests/Data/PixelBlackboard")]
+    [CreateAssetMenu(fileName ="PixelBlackboard", menuName = "Pixeltheory/Data/PixelBlackboard")]
     public class PixelBlackboard : PixelObject
     {
         #region Class
