@@ -1,13 +1,12 @@
-﻿using Pixeltheory.Debug;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Assertions;
+using Pixeltheory.Blackboard;
 
 
 namespace Pixeltheory
 {
-    public abstract class PixelBehaviour<TypeBlackboard, TypeData> : MonoBehaviour
-        where TypeBlackboard : PixelBlackboard<TypeData> 
-        where TypeData : PixelObject
+    public abstract class PixelBehaviour<BlackboardDataType> : MonoBehaviour
+        where BlackboardDataType : PixelBlackboardData
     {
 
     #region Instance
@@ -15,7 +14,7 @@ namespace Pixeltheory
     #region Inspector
     [Header("PixelBehaviour")]
     [SerializeField] private Transform rootTransform;
-    [SerializeField] private TypeBlackboard blackboard;
+    [SerializeField] private PixelBlackboard blackboard;
     #endregion //Inspector    
     #endregion //Fields
 
@@ -24,7 +23,7 @@ namespace Pixeltheory
     protected int RootID => this.rootTransform.GetInstanceID();
     protected int PixelBehaviourID => this.GetInstanceID();
     protected Transform RootTransform => this.rootTransform;
-    protected TypeBlackboard Blackboard => this.blackboard;
+    protected BlackboardDataType Blackboard => this.blackboard.Data as BlackboardDataType;
     #endregion //Protected
     #endregion //Properties
 

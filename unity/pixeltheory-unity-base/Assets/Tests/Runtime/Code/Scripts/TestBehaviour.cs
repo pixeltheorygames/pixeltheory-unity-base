@@ -4,7 +4,7 @@ using Pixeltheory.Debug;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestBehaviour : PixelBehaviour<TestBlackboard, TestRuntimeData>
+public class TestBehaviour : PixelBehaviour<TestRuntimeData>
 {
     #region Methods
     #region Unity Messages
