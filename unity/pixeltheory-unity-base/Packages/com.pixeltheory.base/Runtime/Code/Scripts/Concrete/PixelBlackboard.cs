@@ -61,35 +61,25 @@ namespace Pixeltheory.Blackboard
 
         private void OnEnable()
         {
-            /*
-             *  Ellis 2023.12.22
-             *  We can no longer use Application.IsPlaying to differentiate between non-play edit mode and play mode
-             *  in the editor. OnEnable seems to be only called once, regardless of Editor mode, so the work around
-             *  of using Application.IsPlaying is no longer needed, and actually does not work anymore.
-             */
-            string sceneName = SceneManager.GetActiveScene().name;
-            PixelBlackboardData dataToClone = this.defaultData;
-            foreach (PixelKeyValuePair<string, PixelBlackboardData> kvPair in this.sceneNameToDataList)
+            if (Application.isPlaying && PixelBlackboard.sharedData == null)
             {
-                if (sceneName == kvPair.Key)
+                string sceneName = SceneManager.GetActiveScene().name;
+                PixelBlackboardData dataToClone = this.defaultData;
+                foreach (PixelKeyValuePair<string, PixelBlackboardData> kvPair in this.sceneNameToDataList)
                 {
-                    dataToClone = kvPair.Value;
-                    break;
+                    if (sceneName == kvPair.Key)
+                    {
+                        dataToClone = kvPair.Value;
+                        break;
+                    }
                 }
+                PixelBlackboard.sharedData = PixelBlackboardData.Instantiate(dataToClone);
+                PixelBlackboard.sharedData.OnBlackboardLoad();   
             }
-            PixelBlackboard.sharedData = PixelBlackboardData.Instantiate(dataToClone);
-            PixelBlackboard.sharedData.OnBlackboardLoad();
         }
 
         private void OnDisable()
         {
-            /*
-             *  Ellis 2024.05.01
-             *  Unfortunately, for OnDisable, we still have multiple calls on Editor Play mode, as the
-             *  ScriptableObjects are unloaded on Edit mode then reloaded on Play mode. So we still need
-             *  to still use Application.isPlaying to differentiate between Edit mode finished OnDisable
-             *  and actual Play mode OnDisable.
-             */
             if (Application.isPlaying && PixelBlackboard.sharedData != null)
             {
                 PixelBlackboard.sharedData.OnBlackboardUnload();
