@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1271
     height: 733.5
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Console
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 36
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 37
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 38
+  controlID: 19
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -269,16 +269,16 @@ MonoBehaviour:
     y: 378
     width: 1271
     height: 305.5
-  m_MinSize: {x: 230, y: 271}
-  m_MaxSize: {x: 10000, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 18}
   - {fileID: 13}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,7 +384,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 04f7ffff44f7ffffa0f9ffff38fbffff
+      m_ExpandedIDs: 7cf6ffffbcf6ffff16f9ffff38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -902,7 +902,7 @@ MonoBehaviour:
       name: pixeltheory-unity-base
       fullName: pixeltheory-unity-base
       resultStatus: 1
-      duration: 0.213027
+      duration: 0.2027791
       messages: 
       output: 
       stacktrace: 
@@ -918,7 +918,7 @@ MonoBehaviour:
       name: Pixeltheory.Base.Runtime.Tests.dll
       fullName: /Users/ellistalley/Projects/Pixeltheory/UnityPackages/pixeltheory-unity-base/unity/pixeltheory-unity-base/Library/ScriptAssemblies/Pixeltheory.Base.Runtime.Tests.dll
       resultStatus: 1
-      duration: 0.1786427
+      duration: 0.1699986
       messages: 
       output: 
       stacktrace: 
@@ -934,7 +934,7 @@ MonoBehaviour:
       name: Pixeltheory
       fullName: Pixeltheory
       resultStatus: 1
-      duration: 0.1714798
+      duration: 0.1623191
       messages: 
       output: 
       stacktrace: 
@@ -950,7 +950,7 @@ MonoBehaviour:
       name: Tests
       fullName: Pixeltheory.Tests
       resultStatus: 1
-      duration: 0.1701345
+      duration: 0.161031
       messages: 
       output: 
       stacktrace: 
@@ -966,7 +966,7 @@ MonoBehaviour:
       name: BlackboardTests
       fullName: Pixeltheory.Tests.BlackboardTests
       resultStatus: 1
-      duration: 0.0042739
+      duration: 0.0043041
       messages: 
       output: 
       stacktrace: 
@@ -982,7 +982,7 @@ MonoBehaviour:
       name: BlackboardPersistenceTest
       fullName: Pixeltheory.Tests.BlackboardTests.BlackboardPersistenceTest
       resultStatus: 1
-      duration: 0.0026202
+      duration: 0.0027208
       messages: 
       output: 
       stacktrace: 
@@ -999,7 +999,7 @@ MonoBehaviour:
       name: GameObjectKeepAliveTests
       fullName: Pixeltheory.Tests.GameObjectKeepAliveTests
       resultStatus: 1
-      duration: 0.0058741
+      duration: 0.0060379
       messages: 
       output: 
       stacktrace: 
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       name: GameObjectKeepAliveSceneLoadTest
       fullName: Pixeltheory.Tests.GameObjectKeepAliveTests.GameObjectKeepAliveSceneLoadTest
       resultStatus: 1
-      duration: 0.0044802
+      duration: 0.0043267
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectWithContextStripTest>d__1.MoveNext
@@ -1039,7 +1039,7 @@ MonoBehaviour:
       name: LoggingTests
       fullName: Pixeltheory.Tests.LoggingTests
       resultStatus: 1
-      duration: 0.1236749
+      duration: 0.1137446
       messages: 
       output: 
       stacktrace: 
@@ -1055,7 +1055,7 @@ MonoBehaviour:
       name: ErrorFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatStripTest
       resultStatus: 1
-      duration: 0.0111447
+      duration: 0.0110273
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatStripTest>d__12.MoveNext
@@ -1079,7 +1079,7 @@ MonoBehaviour:
       name: ErrorFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0058039
+      duration: 0.0053417
       messages: 
       output: 
       stacktrace: 
@@ -1096,7 +1096,7 @@ MonoBehaviour:
       name: ErrorObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectStripTest
       resultStatus: 1
-      duration: 0.0024426
+      duration: 0.0024319
       messages: 
       output: 
       stacktrace: 
@@ -1113,7 +1113,7 @@ MonoBehaviour:
       name: ErrorObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ErrorObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.0045307
+      duration: 0.0049851
       messages: 
       output: 
       stacktrace: 
@@ -1130,7 +1130,7 @@ MonoBehaviour:
       name: ExceptionStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ExceptionStripTest
       resultStatus: 1
-      duration: 0.0032753
+      duration: 0.0030484
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ExceptionStripTest>d__8.MoveNext
@@ -1154,7 +1154,7 @@ MonoBehaviour:
       name: ExceptionWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.ExceptionWithContextStripTest
       resultStatus: 1
-      duration: 0.0269386
+      duration: 0.0254932
       messages: 
       output: 
       stacktrace: 
@@ -1171,7 +1171,7 @@ MonoBehaviour:
       name: LogFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogFormatStripTest
       resultStatus: 1
-      duration: 0.00401
+      duration: 0.0034843
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogFormatStripTest>d__2.MoveNext
@@ -1195,7 +1195,7 @@ MonoBehaviour:
       name: LogFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0041586
+      duration: 0.0042717
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectStripTest>d__10.MoveNext
@@ -1219,7 +1219,7 @@ MonoBehaviour:
       name: LogObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogObjectStripTest
       resultStatus: 1
-      duration: 0.0030252
+      duration: 0.0034482
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<LogObjectStripTest>d__0.MoveNext
@@ -1243,7 +1243,7 @@ MonoBehaviour:
       name: LogObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.LogObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.004686
+      duration: 0.0044651
       messages: 
       output: 
       stacktrace: 
@@ -1260,7 +1260,7 @@ MonoBehaviour:
       name: WarnFormatStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnFormatStripTest
       resultStatus: 1
-      duration: 0.0026919
+      duration: 0.0025295
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorFormatStripTest>d__12.MoveNext
@@ -1284,7 +1284,7 @@ MonoBehaviour:
       name: WarnFormatWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnFormatWithContextStripTest
       resultStatus: 1
-      duration: 0.0044076
+      duration: 0.0043819
       messages: 
       output: 
       stacktrace: 
@@ -1301,7 +1301,7 @@ MonoBehaviour:
       name: WarnObjectStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnObjectStripTest
       resultStatus: 1
-      duration: 0.0032528
+      duration: 0.003116
       messages: 
       output: 
       stacktrace: 
@@ -1318,7 +1318,7 @@ MonoBehaviour:
       name: WarnObjectWithContextStripTest
       fullName: Pixeltheory.Tests.LoggingTests.WarnObjectWithContextStripTest
       resultStatus: 1
-      duration: 0.0027449
+      duration: 0.0030045
       messages: 
       output: 
       stacktrace: 'at Pixeltheory.Tests.LoggingTests+<ErrorObjectWithContextStripTest>d__11.MoveNext

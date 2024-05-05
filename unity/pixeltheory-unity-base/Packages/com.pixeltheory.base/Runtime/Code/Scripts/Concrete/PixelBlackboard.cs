@@ -61,7 +61,7 @@ namespace Pixeltheory.Blackboard
 
         private void OnEnable()
         {
-            if (Application.isPlaying && PixelBlackboard.sharedData == null)
+            if (PixelBlackboard.sharedData == null)
             {
                 string sceneName = SceneManager.GetActiveScene().name;
                 PixelBlackboardData dataToClone = this.defaultData;
@@ -80,7 +80,7 @@ namespace Pixeltheory.Blackboard
 
         private void OnDisable()
         {
-            if (Application.isPlaying && PixelBlackboard.sharedData != null)
+            if (PixelBlackboard.sharedData != null)
             {
                 PixelBlackboard.sharedData.OnBlackboardUnload();
                 PixelBlackboard.sharedData = null;
