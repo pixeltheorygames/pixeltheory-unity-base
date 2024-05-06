@@ -58,8 +58,10 @@ namespace Pixeltheory.Blackboard
             }
         }
         #endif //Unity_Editor
+        #endregion //Unity Messages
 
-        private void OnEnable()
+        #region PixelObject
+        protected override void OnPlay()
         {
             if (PixelBlackboard.sharedData == null)
             {
@@ -78,7 +80,7 @@ namespace Pixeltheory.Blackboard
             }
         }
 
-        private void OnDisable()
+        protected override void OnStop()
         {
             if (PixelBlackboard.sharedData != null)
             {
@@ -86,7 +88,7 @@ namespace Pixeltheory.Blackboard
                 PixelBlackboard.sharedData = null;
             }
         }
-        #endregion //Unity Messages
+        #endregion //PixelObject
         #endregion //Methods
         #endregion //Instance
     }
