@@ -39,7 +39,25 @@ namespace Pixeltheory.Blackboard
         
         #region Properties
         #region Public
-        public PixelBlackboardData Data => PixelBlackboard.sharedData;
+        public PixelBlackboardData Data
+        {
+            get
+            {
+                #if UNITY_EDITOR
+                /*
+                 * Ellis 2024.05.04
+                 * In the Editor, we have to lazy instantiate the blackboard data
+                 * as there is no (reliable) way to know when the Play button has
+                 * just been pressed.
+                 */
+                if (PixelBlackboard.sharedData == null)
+                {
+                    this.LoadBlackboardData();
+                }
+                #endif //UNITY_EDITOR
+                return PixelBlackboard.sharedData;
+            }
+        }
         #endregion //Public
         #endregion //Properties
         
@@ -58,37 +76,68 @@ namespace Pixeltheory.Blackboard
             }
         }
         #endif //Unity_Editor
-        #endregion //Unity Messages
-
-        #region PixelObject
-        protected override void OnPlay()
+        
+        protected void OnEnable()
         {
+            #if UNITY_EDITOR
+            EditorApplication.playModeStateChanged += this.OnEditorPlayModeStateChange;
+            #else //UNITY_EDITOR
             if (PixelBlackboard.sharedData == null)
             {
-                string sceneName = SceneManager.GetActiveScene().name;
-                PixelBlackboardData dataToClone = this.defaultData;
-                foreach (PixelKeyValuePair<string, PixelBlackboardData> kvPair in this.sceneNameToDataList)
-                {
-                    if (sceneName == kvPair.Key)
-                    {
-                        dataToClone = kvPair.Value;
-                        break;
-                    }
-                }
-                PixelBlackboard.sharedData = PixelBlackboardData.Instantiate(dataToClone);
-                PixelBlackboard.sharedData.OnBlackboardLoad();   
+                this.LoadBlackboardData();
             }
+            #endif ///!UNITY_EDITOR
         }
-
-        protected override void OnStop()
+        
+        protected void OnDisable()
         {
+            #if UNITY_EDITOR
+            EditorApplication.playModeStateChanged -= this.OnEditorPlayModeStateChange;
+            #else //UNITY_EDITOR
             if (PixelBlackboard.sharedData != null)
             {
-                PixelBlackboard.sharedData.OnBlackboardUnload();
-                PixelBlackboard.sharedData = null;
+                this.UnloadBlackboardData();   
+            }
+            #endif //!UNITY_EDITOR
+        }
+        #endregion //Unity Messages
+
+        #region Protected
+        #if UNITY_EDITOR
+        protected void OnEditorPlayModeStateChange(PlayModeStateChange playModeStateChange)
+        {
+            if (playModeStateChange == PlayModeStateChange.ExitingPlayMode)
+            {
+                if (PixelBlackboard.sharedData != null)
+                {
+                    this.UnloadBlackboardData();   
+                }
             }
         }
-        #endregion //PixelObject
+        #endif //UNITY_EDITOR
+
+        protected void LoadBlackboardData()
+        {
+            string sceneName = SceneManager.GetActiveScene().name;
+            PixelBlackboardData dataToClone = this.defaultData;
+            foreach (PixelKeyValuePair<string, PixelBlackboardData> kvPair in this.sceneNameToDataList)
+            {
+                if (sceneName == kvPair.Key)
+                {
+                    dataToClone = kvPair.Value;
+                    break;
+                }
+            }
+            PixelBlackboard.sharedData = PixelBlackboardData.Instantiate(dataToClone);
+            PixelBlackboard.sharedData.OnBlackboardLoad();
+        }
+
+        protected void UnloadBlackboardData()
+        {
+            PixelBlackboard.sharedData.OnBlackboardUnload();
+            PixelBlackboard.sharedData = null;
+        }
+        #endregion //Protected 
         #endregion //Methods
         #endregion //Instance
     }
