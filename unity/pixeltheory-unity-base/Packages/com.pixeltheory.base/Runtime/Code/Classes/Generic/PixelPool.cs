@@ -1,42 +1,53 @@
 using System.Collections.Concurrent;
+using UnityEngine;
 
 
 namespace Pixeltheory
 {
-    public class PixelPool<T> where T : IPoolable, new()
+    public class PixelPool
     {
         #region Fields
         #region Private
-        private ConcurrentBag<T> pool;
+        private GameObject pooledPrefab;
+        private ConcurrentBag<GameObject> pool;
         #endregion //Private
         #endregion //Fields
 
         #region Constructor
-        public PixelPool(int initialAmount = 0)
+        public PixelPool(GameObject prefab, int initialAmount = 0)
         {
-            this.pool = new ConcurrentBag<T>();
+            this.pooledPrefab = prefab;
+            this.pool = new ConcurrentBag<GameObject>();
             for (int i = 0; i < initialAmount; i++)
             {
-                this.pool.Add(new T());
+                this.pool.Add(GameObject.Instantiate(this.pooledPrefab)); 
             }
         }
         #endregion //Constructor
 
+        #region Destructor
+        ~PixelPool()
+        {
+            this.pool.Clear();
+            this.pooledPrefab = null;
+        }
+        #endregion //Destructor
+
         #region Methods
         #region Public
-        public T Borrow()
+        public GameObject Borrow()
         {
-            T lendable;
+            GameObject lendable;
             if (!this.pool.TryTake(out lendable))
             {
-                lendable = new T();
+                lendable = GameObject.Instantiate(this.pooledPrefab);
             }
             return lendable;
         }
-
-        public void Return(T lendable)
+        
+        public void Return(GameObject lendable, IPoolable resettable)
         {
-            lendable.Reset();
+            resettable.PoolReturnReset();
             this.pool.Add(lendable);
         }
         #endregion //Public

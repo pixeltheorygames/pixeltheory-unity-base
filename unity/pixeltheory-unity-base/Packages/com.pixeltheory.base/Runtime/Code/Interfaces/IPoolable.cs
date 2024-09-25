@@ -2,6 +2,6 @@ namespace Pixeltheory
 {
     public interface IPoolable
     {
-        public void Reset();
+        public void PoolReturnReset();
     }
 }
