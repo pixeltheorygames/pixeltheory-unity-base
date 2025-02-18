@@ -32,27 +32,31 @@ namespace Pixeltheory.Blackboard
         
         #region Properties
         #region Public
-        public PixelBlackboardData Data
-        {
-            get
-            {
-                return PixelBlackboard.sharedData ?? this.LoadBlackboardData();
-            }
-        }
+        public PixelBlackboardData Data => PixelBlackboard.sharedData;
         #endregion //Public
         #endregion //Properties
         
         #region Methods
-        #region Unity Messages
-        protected void OnDestroy()
-        {
-            if (PixelBlackboard.sharedData != null)
-            {
-                this.UnloadBlackboardData();
-            }
-        }
-        #endregion //Unity Messages
-
+        #region PixelObject
+        // protected void OnEnable()
+        // {
+        //     if (base.currentPixelObjectState == PixelObjectState.Disabled)
+        //     {
+        //         base.currentPixelObjectState = PixelObjectState.Enabled;
+        //         if (PixelBlackboard.sharedData == null) { PixelBlackboard.sharedData = this.LoadBlackboardData(); }
+        //     }
+        // }
+        //
+        // protected void OnDisable()
+        // {
+        //     if (base.currentPixelObjectState == PixelObjectState.Enabled)
+        //     {
+        //         if (PixelBlackboard.sharedData != null) { this.UnloadBlackboardData(); }
+        //         base.currentPixelObjectState = PixelObjectState.Disabled;
+        //     }
+        // }
+        #endregion //PixelObject
+        
         #region Protected
         protected PixelBlackboardData LoadBlackboardData()
         {

@@ -12,14 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d6e5f73faab4b8896063734683d173, type: 3}
   m_Name: PixelBlackboard
   m_EditorClassIdentifier: 
-  defaultData: {fileID: 11400000, guid: 6f7ad626cc6a0485fbb5bb53f33f33c7, type: 2}
-  sceneToDataList:
-  - key: {fileID: 102900000, guid: 71fc33b5a024346cc801aa75171e4180, type: 3}
-    value: {fileID: 11400000, guid: 6f7ad626cc6a0485fbb5bb53f33f33c7, type: 2}
-  - key: {fileID: 102900000, guid: f0a149f41cb844c61a51b54fb98e6407, type: 3}
-    value: {fileID: 11400000, guid: 7aa6d4c5bc1ad463988f6426d9638f18, type: 2}
-  sceneNameToDataList:
-  - key: SampleSceneDataOne
-    value: {fileID: 11400000, guid: 6f7ad626cc6a0485fbb5bb53f33f33c7, type: 2}
-  - key: SampleSceneDataTwo
-    value: {fileID: 11400000, guid: 7aa6d4c5bc1ad463988f6426d9638f18, type: 2}
+  pixelObjectState: 0
+  defaultData: {fileID: 0}
+  sceneNameToDataList: []

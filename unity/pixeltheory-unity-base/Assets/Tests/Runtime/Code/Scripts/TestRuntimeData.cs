@@ -3,8 +3,8 @@ using Pixeltheory.Blackboard;
 using Pixeltheory.Debug;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="TestRuntimeData", menuName = "Pixeltheory/Tests/Data/TestRuntimeData")]
-public class TestRuntimeData : PixelBlackboardData
+//[CreateAssetMenu(fileName ="TestRuntimeData", menuName = "Pixeltheory/Tests/Data/TestRuntimeData")]
+public class TestRuntimeData 
 {
     #region Fields
     #region Inspector
@@ -19,16 +19,7 @@ public class TestRuntimeData : PixelBlackboardData
     #endregion //Properties
 
     #region Methods
-    #region PixelBlackboardData
-    public override void OnBlackboardLoad()
-    {
-        PixelLog.Log("TestRuntimeData Loaded");
-    }
-    
-    public override void OnBlackboardUnload()
-    {
-        PixelLog.Log("TestRuntimeData Unloaded");
-    }
-    #endregion //PixelBlackboardData
+    #region PixelObject
+    #endregion PixelObject
     #endregion //Methods
 }
