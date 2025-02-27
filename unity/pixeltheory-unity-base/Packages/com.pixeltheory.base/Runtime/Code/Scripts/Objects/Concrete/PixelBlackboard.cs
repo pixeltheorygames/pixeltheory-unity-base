@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,7 +19,7 @@ namespace Pixeltheory.Blackboard
         [NonSerialized] private Dictionary<string, int> intDataMap;
         [NonSerialized] private Dictionary<string, float> floatDataMap;
         [NonSerialized] private Dictionary<string, string> stringDataMap;
-        [NonSerialized] private Dictionary<string, List> listDataMap;
+        [NonSerialized] private Dictionary<string, bool> boolDataMap;
         #endregion //Private
         #endregion //Fields
         
@@ -82,13 +81,13 @@ namespace Pixeltheory.Blackboard
             this.intDataMap = new Dictionary<string, int>();
             this.floatDataMap = new Dictionary<string, float>();
             this.stringDataMap = new Dictionary<string, string>();
-            this.listDataMap = new Dictionary<string, List>();
+            this.boolDataMap = new Dictionary<string, bool>();
         }
 
         private void DataMapsDeinit()
         {
-            this.listDataMap.Clear();
-            this.listDataMap = null;
+            this.boolDataMap.Clear();
+            this.boolDataMap = null;
             this.stringDataMap.Clear();
             this.stringDataMap = null;
             this.floatDataMap.Clear();
@@ -222,39 +221,39 @@ namespace Pixeltheory.Blackboard
             }
         }
         
-        public bool AddOrUpdateListData(string key, List data)
+        public bool AddOrUpdateBoolData(string key, bool data)
         {
-            if (this.listDataMap.ContainsKey(key))
+            if (this.boolDataMap.ContainsKey(key))
             {
-                this.listDataMap[key] = data;
+                this.boolDataMap[key] = data;
                 return true;
             }
             else
             {
-                this.listDataMap.Add(key, data);
+                this.boolDataMap.Add(key, data);
                 return false;
             }
         }
 
-        public bool GetListData(string key, out List data)
+        public bool GetBoolData(string key, out bool data)
         {
-            if (this.listDataMap.ContainsKey(key))
+            if (this.boolDataMap.ContainsKey(key))
             {
-                data = this.listDataMap[key];
+                data = this.boolDataMap[key];
                 return true;
             }
             else
             {
-                data = null;
+                data = false;
                 return false;
             }
         }
 
-        public bool RemoveListData(string key)
+        public bool RemoveBoolData(string key)
         {
-            if (this.listDataMap.ContainsKey(key))
+            if (this.boolDataMap.ContainsKey(key))
             {
-                this.listDataMap.Remove(key);
+                this.boolDataMap.Remove(key);
                 return true;
             }
             else
