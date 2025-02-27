@@ -2,7 +2,7 @@
     "name": "Pixeltheory.Base.Editor",
     "rootNamespace": "",
     "references": [
-        "Pixeltheory.Base.Runtime"
+        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275"
     ],
     "includePlatforms": [
         "Editor"

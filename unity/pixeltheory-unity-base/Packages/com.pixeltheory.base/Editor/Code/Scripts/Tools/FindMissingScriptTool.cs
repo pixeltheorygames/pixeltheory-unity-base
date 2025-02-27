@@ -78,7 +78,12 @@ namespace Pixeltheory.Editor
         private static void FindMissingScriptsInCurrentScene()
         {
             objectsWithMissingScriptsInCurrentScene.Clear();
-            GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
+            GameObject[] allObjects;
+            #if UNITY_6000_0_OR_NEWER
+            allObjects = GameObject.FindObjectsByType<GameObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            #else
+            allObjects = GameObject.FindObjectsOfType<GameObject>();
+            #endif            
             foreach (GameObject go in allObjects)
             {
                 if (go.transform.parent == null) // Only start with root objects

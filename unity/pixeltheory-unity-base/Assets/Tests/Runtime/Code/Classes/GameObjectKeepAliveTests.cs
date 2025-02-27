@@ -16,7 +16,7 @@ namespace Pixeltheory.Tests
                 new GameObject
                 (
                     "Test GameObject with GameObjectKeepAlive",
-                    typeof(GameObjectKeepAlive)
+                    typeof(PixelGameObjectKeepAlive)
                 );
             AsyncOperation sceneLoader = 
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name, LoadSceneMode.Single);

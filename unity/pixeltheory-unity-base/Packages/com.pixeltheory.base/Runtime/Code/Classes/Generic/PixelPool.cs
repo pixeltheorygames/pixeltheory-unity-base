@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -45,9 +46,12 @@ namespace Pixeltheory
             return lendable;
         }
         
-        public void Return(GameObject lendable, IPoolable resettable)
+        public void Return(GameObject lendable, List<IPoolable> pooledObjectBehaviours)
         {
-            resettable.PoolReturnReset();
+            foreach (IPoolable resettableBehaviour in pooledObjectBehaviours)
+            {
+                resettableBehaviour.PoolReturnReset();
+            }
             this.pool.Add(lendable);
         }
         #endregion //Public
