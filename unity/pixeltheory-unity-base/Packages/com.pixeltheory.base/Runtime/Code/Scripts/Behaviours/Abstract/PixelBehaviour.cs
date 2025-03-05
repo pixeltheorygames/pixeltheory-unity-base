@@ -11,8 +11,8 @@ namespace Pixeltheory
         #region Fields
         #region Inspector
         [Header("PixelBehaviour")]
-        [SerializeField] private Transform prefabRootTransform;
-        [SerializeField] private PixelBlackboard blackboard;
+        [SerializeField] protected Transform prefabRootTransform;
+        [SerializeField] protected PixelBlackboard blackboard;
         #endregion //Inspector    
         #endregion //Fields
 
