@@ -69,22 +69,10 @@ namespace Pixeltheory.Blackboard
 
         private void InitBuiltInModules()
         {
-            PixelBlackboardModuleInt builtInModuleInt = PixelObject.CreateInstance<PixelBlackboardModuleInt>();
-            builtInModuleInt.OnBlackboardLoad(this);
-            this.builtInBlackboardModuleList.Add(builtInModuleInt);
-            this.blackboardModuleDictionary.Add(builtInModuleInt.ModuleKey, builtInModuleInt);
-            PixelBlackboardModuleBool builtInModuleBool = PixelObject.CreateInstance<PixelBlackboardModuleBool>();
-            builtInModuleBool.OnBlackboardLoad(this);
-            this.builtInBlackboardModuleList.Add(builtInModuleBool);
-            this.blackboardModuleDictionary.Add(builtInModuleBool.ModuleKey, builtInModuleBool);
-            PixelBlackboardModuleFloat builtInModuleFloat = PixelObject.CreateInstance<PixelBlackboardModuleFloat>();
-            builtInModuleFloat.OnBlackboardLoad(this);
-            this.builtInBlackboardModuleList.Add(builtInModuleFloat);
-            this.blackboardModuleDictionary.Add(builtInModuleFloat.ModuleKey, builtInModuleFloat);
-            PixelBlackboardModuleString builtInModuleString = PixelObject.CreateInstance<PixelBlackboardModuleString>();
-            builtInModuleString.OnBlackboardLoad(this);
-            this.builtInBlackboardModuleList.Add(builtInModuleString);
-            this.blackboardModuleDictionary.Add(builtInModuleString.ModuleKey, builtInModuleString);
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData = PixelObject.CreateInstance<PixelBlackboardModuleRuntimeData>();
+            builtInModuleRuntimeData.OnBlackboardLoad(this);
+            this.builtInBlackboardModuleList.Add(builtInModuleRuntimeData);
+            this.blackboardModuleDictionary.Add(builtInModuleRuntimeData.ModuleKey, builtInModuleRuntimeData);
         }
 
         private void InitUserModules()

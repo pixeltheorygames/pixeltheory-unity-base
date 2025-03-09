@@ -1,16 +1,13 @@
-using UnityEngine;
-
-
 namespace Pixeltheory.Blackboard
 {
     public static class PixelBlackboardModuleIntExtensions
     {
         public static bool AddOrUpdateIntData(this PixelBlackboard blackboard, string key, int data)
         {
-            PixelBlackboardModuleInt builtInModuleInt;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleInt.moduleKey, out builtInModuleInt))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleInt.AddOrUpdateIntData(key, data);
+                return builtInModuleRuntimeData.AddOrUpdateIntData(key, data);
             }
             else
             {
@@ -20,10 +17,10 @@ namespace Pixeltheory.Blackboard
         
         public static bool GetIntData(this PixelBlackboard blackboard, string key, out int data)
         {
-            PixelBlackboardModuleInt builtInModuleInt;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleInt.moduleKey, out builtInModuleInt))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleInt.GetIntData(key, out data);
+                return builtInModuleRuntimeData.GetIntData(key, out data);
             }
             else
             {
@@ -34,10 +31,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool RemoveIntData(this PixelBlackboard blackboard, string key)
         {
-            PixelBlackboardModuleInt builtInModuleInt;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleInt.moduleKey, out builtInModuleInt))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleInt.RemoveIntData(key);
+                return builtInModuleRuntimeData.RemoveIntData(key);
             }
             else
             {
@@ -47,10 +44,10 @@ namespace Pixeltheory.Blackboard
         
         public static bool AddOrUpdateBoolData(this PixelBlackboard blackboard, string key, bool data)
         {
-            PixelBlackboardModuleBool builtInModuleBool;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleBool.moduleKey, out builtInModuleBool))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleBool.AddOrUpdateBoolData(key, data);
+                return builtInModuleRuntimeData.AddOrUpdateBoolData(key, data);
             }
             else
             {
@@ -60,10 +57,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool GetBoolData(this PixelBlackboard blackboard, string key, out bool data)
         {
-            PixelBlackboardModuleBool builtInModuleBool;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleBool.moduleKey, out builtInModuleBool))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleBool.GetBoolData(key, out data);
+                return builtInModuleRuntimeData.GetBoolData(key, out data);
             }
             else
             {
@@ -74,10 +71,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool RemoveBoolData(this PixelBlackboard blackboard, string key)
         {
-            PixelBlackboardModuleBool builtInModuleBool;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleBool.moduleKey, out builtInModuleBool))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleBool.RemoveBoolData(key);
+                return builtInModuleRuntimeData.RemoveBoolData(key);
             }
             else
             {
@@ -87,10 +84,10 @@ namespace Pixeltheory.Blackboard
         
         public static bool AddOrUpdateFloatData(this PixelBlackboard blackboard, string key, float data)
         {
-            PixelBlackboardModuleFloat builtInModuleFloat;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleFloat.moduleKey, out builtInModuleFloat))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleFloat.AddOrUpdateFloatData(key, data);
+                return builtInModuleRuntimeData.AddOrUpdateFloatData(key, data);
             }
             else
             {
@@ -100,10 +97,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool GetFloatData(this PixelBlackboard blackboard, string key, out float data)
         {
-            PixelBlackboardModuleFloat builtInModuleFloat;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleFloat.moduleKey, out builtInModuleFloat))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleFloat.GetFloatData(key, out data);
+                return builtInModuleRuntimeData.GetFloatData(key, out data);
             }
             else
             {
@@ -114,10 +111,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool RemoveFloatData(this PixelBlackboard blackboard, string key)
         {
-            PixelBlackboardModuleFloat builtInModuleFloat;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleFloat.moduleKey, out builtInModuleFloat))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleFloat.RemoveFloatData(key);
+                return builtInModuleRuntimeData.RemoveFloatData(key);
             }
             else
             {
@@ -127,10 +124,10 @@ namespace Pixeltheory.Blackboard
         
         public static bool AddOrUpdateStringData(this PixelBlackboard blackboard, string key, string data)
         {
-            PixelBlackboardModuleString builtInModuleString;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleString.moduleKey, out builtInModuleString))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleString.AddOrUpdateStringData(key, data);
+                return builtInModuleRuntimeData.AddOrUpdateStringData(key, data);
             }
             else
             {
@@ -140,10 +137,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool GetStringData(this PixelBlackboard blackboard, string key, out string data)
         {
-            PixelBlackboardModuleString builtInModuleString;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleString.moduleKey, out builtInModuleString))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleString.GetStringData(key, out data);
+                return builtInModuleRuntimeData.GetStringData(key, out data);
             }
             else
             {
@@ -154,10 +151,10 @@ namespace Pixeltheory.Blackboard
 
         public static bool RemoveStringData(this PixelBlackboard blackboard, string key)
         {
-            PixelBlackboardModuleString builtInModuleString;
-            if (blackboard.GetBlackboardModule(PixelBlackboardModuleString.moduleKey, out builtInModuleString))
+            PixelBlackboardModuleRuntimeData builtInModuleRuntimeData;
+            if (blackboard.GetBlackboardModule(PixelBlackboardModuleRuntimeData.moduleKey, out builtInModuleRuntimeData))
             {
-                return builtInModuleString.RemoveStringData(key);
+                return builtInModuleRuntimeData.RemoveStringData(key);
             }
             else
             {
