@@ -17,9 +17,9 @@ namespace Pixeltheory
         #endregion //Fields
 
         #region Properties
-        #region Protected
-        protected Transform PrefabRootTransform => this.prefabRootTransform;
-        #endregion //Protected
+        #region Public
+        public Transform PrefabRootTransform => this.prefabRootTransform;
+        #endregion //Public
         #endregion //Properties
 
         #region Methods
