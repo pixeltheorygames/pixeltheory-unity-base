@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Pixeltheory.Blackboard
 {
-    [CreateAssetMenu(fileName = "PixelBlackboard", menuName = "Pixeltheory/Data/PixelBlackboard")]
+    [CreateAssetMenu(fileName = "PixelBlackboard", menuName = "Pixeltheory/Blackboard/PixelBlackboard", order = 0)]
     public class PixelBlackboard : PixelObject
     {
         #region Fields
