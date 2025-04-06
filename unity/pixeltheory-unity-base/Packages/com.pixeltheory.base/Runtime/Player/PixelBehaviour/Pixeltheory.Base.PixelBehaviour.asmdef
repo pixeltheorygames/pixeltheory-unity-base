@@ -1,0 +1,16 @@
+{
+    "name": "Pixeltheory.Base.PixelBehaviour",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c925dd2be8c42f34abe614074984ccd5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
