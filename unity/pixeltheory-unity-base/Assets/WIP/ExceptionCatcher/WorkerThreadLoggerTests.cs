@@ -23,7 +23,7 @@ namespace Pixeltheory.Tests
             AppDomain workerDomain = AppDomain.CreateDomain("Worker Domain");
             workerDomain.ExecuteAssemblyByName(testClassesAssembly.GetName());
 
-            PixelLog.Log(AppDomain.CurrentDomain.FriendlyName);
+            //PixelLog.Log(AppDomain.CurrentDomain.FriendlyName);
             
             // LogAssert.Expect(LogType.Exception, "Exception: Exception on worker thread.");
             // PixelLog.Warn(AppDomain.CurrentDomain.ToString());
