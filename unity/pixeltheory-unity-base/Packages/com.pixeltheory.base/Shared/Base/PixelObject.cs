@@ -1,10 +1,8 @@
 ﻿#if UNITY_EDITOR
 using UnityEditor;
 #endif //UNITY_EDITOR
-using Pixeltheory.Blackboard;
 using UnityEngine;
 using Pixeltheory.Debug;
-using UnityEngine.Assertions;
 
 
 namespace Pixeltheory

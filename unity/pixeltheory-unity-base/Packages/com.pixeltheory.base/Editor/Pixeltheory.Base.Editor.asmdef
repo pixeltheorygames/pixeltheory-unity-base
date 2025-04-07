@@ -1,7 +1,10 @@
 {
     "name": "Pixeltheory.Base.Editor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275",
+        "GUID:3ba0f6d33060a1342bbc46a615d1ef9b"
+    ],
     "includePlatforms": [
         "Editor"
     ],
