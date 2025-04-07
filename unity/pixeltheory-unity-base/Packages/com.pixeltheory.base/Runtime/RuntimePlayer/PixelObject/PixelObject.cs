@@ -12,10 +12,6 @@ namespace Pixeltheory
     public abstract class PixelObject : ScriptableObject
     {
         #region Fields
-        #region Inspector
-        [Header("PixelObject")]
-        [SerializeField] private PixelBlackboard pixelBlackboard;
-        #endregion //Inspector
         
         #region Private
         private const string lifecycleLogFormat = "Method: {0}; Object Name: {1}; Object Type: {2}; Instance ID: {3}";
@@ -84,7 +80,6 @@ namespace Pixeltheory
         protected virtual void OnObjectAwake()
         {
             PixelLog.Log(PixelObject.lifecycleLogFormat, "OnObjectAwake", this.name, this.GetType().Name, this.GetInstanceID());
-            Assert.IsNotNull(this.pixelBlackboard);
         }
         
         protected virtual void OnObjectEnable()
