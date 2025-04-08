@@ -1,6 +1,7 @@
 ﻿#if UNITY_EDITOR
 using UnityEditor;
 #endif //UNITY_EDITOR
+using System;
 using UnityEngine;
 using Pixeltheory.Debug;
 
@@ -23,31 +24,33 @@ namespace Pixeltheory
         {
             this.OnObjectAwake();
         }
-        #endif
-
+        #endif //!UNITY_EDITOR
+        
+        
         private void OnEnable()
         {
             #if UNITY_EDITOR
             if (EditorApplication.isPlayingOrWillChangePlaymode)
             {
-                EditorApplication.playModeStateChanged += this.OnPlayModeStateChangedHandler;   
+                this.OnObjectAwake();
+                EditorApplication.playModeStateChanged += this.OnPlayModeStateChangedHandler;
             }
-            #else
+            #else //UNITY_EDITOR
             this.OnObjectEnable();
-            #endif
+            #endif //!UNITY_EDITOR
         }
-
+        
         private void OnDisable()
         {
             #if UNITY_EDITOR
-            if (Application.isPlaying)
+            if (EditorApplication.isPlaying)
             {
                 EditorApplication.playModeStateChanged -= this.OnPlayModeStateChangedHandler;
                 this.OnObjectDisable();
             }
-            #else
+            #else //UNITY_EDITOR
             this.OnObjectDisable();
-            #endif
+            #endif //!UNITY_EDITOR
         }
         #endregion //Unity Messages
 
@@ -57,11 +60,12 @@ namespace Pixeltheory
         {
             switch (playModeStateChange)
             {
-                case PlayModeStateChange.ExitingEditMode:
-                    this.OnObjectAwake();
-                    break;
                 case PlayModeStateChange.EnteredPlayMode:
                     this.OnObjectEnable();
+                    break;
+                case PlayModeStateChange.ExitingPlayMode:
+                    EditorApplication.playModeStateChanged -= this.OnPlayModeStateChangedHandler;
+                    this.OnObjectDisable();
                     break;
                 default:
                     //NOP

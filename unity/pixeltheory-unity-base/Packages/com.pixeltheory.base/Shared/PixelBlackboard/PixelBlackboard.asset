@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d6e5f73faab4b8896063734683d173, type: 3}
   m_Name: PixelBlackboard
   m_EditorClassIdentifier: 
-  DisableRuntimeInstantiation: 1
-  runtimeDataModule: {fileID: 11400000, guid: 3e95b01626ab72b4886ce407e42385ce, type: 2}
+  runtimeDataModule: {fileID: 11400000, guid: 6e4eaab544942be49b9268732b3fb4fa, type: 2}

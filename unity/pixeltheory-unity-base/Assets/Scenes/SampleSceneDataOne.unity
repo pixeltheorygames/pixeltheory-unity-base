@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25061a8cdc55a47c181013d852b720a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelBlackboard: {fileID: 11400000, guid: 1605f0b7efcf3b4409a15a3f1d7d6db2, type: 2}
+  pixelBlackboard: {fileID: 11400000, guid: 5bf3f244a619dc345aee61a6f9a64105, type: 2}
 --- !u!4 &42108197
 Transform:
   m_ObjectHideFlags: 0

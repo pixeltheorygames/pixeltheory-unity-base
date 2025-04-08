@@ -12,4 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af55ca1539bae148ae8bec6fb133ba9, type: 3}
   m_Name: RuntimeDataModule
   m_EditorClassIdentifier: 
-  DisableRuntimeInstantiation: 1

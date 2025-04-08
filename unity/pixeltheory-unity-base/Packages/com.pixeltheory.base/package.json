@@ -1,9 +1,9 @@
 {
   "name": "com.pixeltheory.base",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "displayName": "Pixeltheory Base",
   "description": "This package provides base Unity scripts/classes that can be used in Unity projects, as well as debug functionality.",
-  "unity": "2020.3",
+  "unity": "6000.3",
   "keywords": [
     "Pixeltheory",
     "Base",
