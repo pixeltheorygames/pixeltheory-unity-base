@@ -11,23 +11,24 @@ namespace Pixeltheory
         #region Fields
         #region Inspector
         [Header("PixelBehaviour")]
-        [SerializeField] protected PixelBlackboard blackboard;
-        [SerializeField] protected Transform prefabRootTransform;
+        [SerializeField] private PixelBlackboard blackboard;
+        [SerializeField] private Transform prefabRootTransform;
         #endregion //Inspector    
         #endregion //Fields
 
         #region Properties
-        #region Public
-        public Transform PrefabRootTransform => this.prefabRootTransform;
-        #endregion //Public
+        #region Protected
+        protected PixelBlackboard Blackboard => this.blackboard;
+        protected Transform PrefabRootTransform => this.prefabRootTransform;
+        #endregion //Protected
         #endregion //Properties
 
         #region Methods
         #region Unity Messages
         protected virtual void Awake()
         {
-            Assert.IsNotNull(this.prefabRootTransform);
             Assert.IsNotNull(this.blackboard);
+            Assert.IsNotNull(this.prefabRootTransform);
         }
         #endregion //Unity Messages
         #endregion //Methods
