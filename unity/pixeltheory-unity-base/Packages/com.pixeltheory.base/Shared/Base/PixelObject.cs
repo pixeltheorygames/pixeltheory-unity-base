@@ -40,9 +40,10 @@ namespace Pixeltheory
         private void OnDisable()
         {
             #if UNITY_EDITOR
-            if (EditorApplication.isPlayingOrWillChangePlaymode)
+            if (Application.isPlaying)
             {
-                EditorApplication.playModeStateChanged -= this.OnPlayModeStateChangedHandler;   
+                EditorApplication.playModeStateChanged -= this.OnPlayModeStateChangedHandler;
+                this.OnObjectDisable();
             }
             #else
             this.OnObjectDisable();
@@ -62,10 +63,6 @@ namespace Pixeltheory
                 case PlayModeStateChange.EnteredPlayMode:
                     this.OnObjectEnable();
                     break;
-                case PlayModeStateChange.ExitingPlayMode:
-                    this.OnObjectDisable();
-                    break;
-                case PlayModeStateChange.EnteredEditMode:
                 default:
                     //NOP
                     break;
