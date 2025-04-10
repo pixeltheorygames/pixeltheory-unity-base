@@ -14,7 +14,7 @@ namespace Pixeltheory.Blackboard
 
         #region Properties
         #region Public
-        public RuntimeDataModule RuntimeDataModule => this.runtimeDataModule;
+        public RuntimeDataModule RuntimeData => this.runtimeDataModule;
         #endregion //Public
         #endregion //Properties
     }
