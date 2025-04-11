@@ -1,13 +1,10 @@
 {
-    "name": "Pixeltheory.Base.Editor",
+    "name": "Pixeltheory.Base.Blackboard",
     "rootNamespace": "",
     "references": [
-        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275",
-        "GUID:023c299c3e3e043468ec8cd1c1f9c849"
+        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

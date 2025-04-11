@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using Pixeltheory.Attributes;
 /*
  *	Ellis Note 2025.4.3
  *

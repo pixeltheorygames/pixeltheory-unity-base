@@ -1,8 +1,9 @@
 {
-    "name": "Pixeltheory.Base.Shared",
+    "name": "Pixeltheory.Base.Switchboard",
     "rootNamespace": "",
     "references": [
-        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275"
+        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275",
+        "GUID:023c299c3e3e043468ec8cd1c1f9c849"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

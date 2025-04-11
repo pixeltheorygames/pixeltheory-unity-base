@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 
-namespace Pixeltheory.Editor.Tests
+namespace Pixeltheory.Editor
 {
     public class SceneCameraTransformCopyTool
     {

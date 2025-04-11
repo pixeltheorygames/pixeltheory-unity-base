@@ -1,26 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Pixeltheory.Blackboard;
 
 
-namespace Pixeltheory.Blackboard
+namespace Pixeltheory.DataCache
 {
-    public partial class PixelBlackboard
-    {
-        #region Fields
-        #region Private
-        [SerializeField] private RuntimeDataModule runtimeDataModule;
-        #endregion //Private
-        #endregion //Fields
-
-        #region Properties
-        #region Public
-        public RuntimeDataModule RuntimeData => this.runtimeDataModule;
-        #endregion //Public
-        #endregion //Properties
-    }
-    
-    [CreateAssetMenu(fileName = "RuntimeDataModule", menuName = "Pixeltheory/Blackboard/Modules/RuntimeData")]
-    public class RuntimeDataModule : PixelBlackboardModule
+    [CreateAssetMenu(fileName = "DataCacheModule", menuName = "Pixeltheory/Blackboard/Modules/DataCache")]
+    public partial class DataCacheModule : PixelBlackboardModule
     {
         #region Fields
         #region Private

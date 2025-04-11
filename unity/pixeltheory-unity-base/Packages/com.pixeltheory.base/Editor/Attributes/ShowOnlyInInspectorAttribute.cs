@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-namespace Pixeltheory.Attributes
+namespace Pixeltheory
 {
 	public class ShowOnlyInInspectorAttribute : PropertyAttribute
 	{
