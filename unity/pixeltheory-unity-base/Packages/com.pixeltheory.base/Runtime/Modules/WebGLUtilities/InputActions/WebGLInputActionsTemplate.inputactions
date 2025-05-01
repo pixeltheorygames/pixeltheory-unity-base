@@ -1,0 +1,71 @@
+{
+    "name": "WebGLInputActionsTemplate",
+    "maps": [
+        {
+            "name": "WebGLUtilities",
+            "id": "f4a62bb3-2c66-4e3f-9c20-89a26e7a6d8a",
+            "actions": [
+                {
+                    "name": "ExitFullscreen",
+                    "type": "Button",
+                    "id": "10c384e4-369a-4c72-9679-f52f5b4c190e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnterFullscreen",
+                    "type": "Button",
+                    "id": "d9aed4ca-e2bd-4bfa-8ba0-8325d54b2722",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "59bc7e48-b220-4869-81ca-c156de0598a4",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Computer",
+                    "action": "ExitFullscreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dd3727c9-7cb0-41b3-b131-a5b3b7a9dd3d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": ";Computer",
+                    "action": "EnterFullscreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Computer",
+            "bindingGroup": "Computer",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

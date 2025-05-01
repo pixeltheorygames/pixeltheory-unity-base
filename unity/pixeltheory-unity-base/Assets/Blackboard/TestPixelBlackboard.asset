@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea567fbcc31dd664f99282f2f65d8b9a, type: 3}
+  m_Name: TestPixelBlackboard
+  m_EditorClassIdentifier: 
+  dataCacheModule: {fileID: 11400000, guid: 74bd18d8e4a354f46b7582eb368bde85, type: 2}
+  socketSwitchboard: {fileID: 11400000, guid: eb8e7f375ef26c0489004f1d128dd197, type: 2}
+  webglUtilitiesModule: {fileID: 11400000, guid: 8b52ac8ea7b09464797e0b3239ede451, type: 2}

@@ -2,12 +2,12 @@
     "name": "Pixeltheory.Base.Tests.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:0acc523941302664db1f4e527237feb3",
         "GUID:27619889b8ba8c24980f49ee34dbb44a",
-        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275",
-        "GUID:023c299c3e3e043468ec8cd1c1f9c849"
+        "GUID:fd0d817cb7eed4de48dfe5aa38b0e275"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
